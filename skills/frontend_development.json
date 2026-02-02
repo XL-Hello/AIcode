@@ -1,0 +1,18 @@
+{
+  "name": "frontend_development",
+  "description": "前端开发技能，构建现代化的用户界面",
+  "category": "development",
+  "implementation": "前端开发最佳实践：\n1. 选择合适的框架（React、Vue、Angular等）\n2. 组件化设计和开发\n3. 状态管理实现\n4. 响应式布局设计\n5. 性能优化（懒加载、代码分割等）\n6. 实现无障碍访问\n7. 跨浏览器兼容性处理",
+  "examples": [
+    "使用React开发单页应用",
+    "实现复杂的表单验证",
+    "优化首屏加载时间",
+    "实现PWA功能"
+  ],
+  "metadata": {
+    "tools": ["react", "vue", "webpack", "babel", "sass"],
+    "difficulty": "intermediate",
+    "time_estimate": "2-4小时",
+    "languages": ["javascript", "typescript", "html", "css"]
+  }
+}
