@@ -68,6 +68,15 @@ class SkillManager:
                 data = json.load(f)
                 skill = Skill.from_dict(data)
                 return skill
+        except FileNotFoundError:
+            print(f"Error: File not found: {filepath}")
+            return None
+        except json.JSONDecodeError as e:
+            print(f"Error: Invalid JSON in {filepath}: {e}")
+            return None
+        except KeyError as e:
+            print(f"Error: Missing required field {e} in {filepath}")
+            return None
         except Exception as e:
             print(f"Error loading skill from {filepath}: {e}")
             return None
@@ -130,8 +139,15 @@ class SkillManager:
             self.skills_dir.mkdir(parents=True, exist_ok=True)
             filepath = self.skills_dir / f"{skill.name}.json"
         
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(skill.to_dict(), f, indent=2, ensure_ascii=False)
+        try:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(skill.to_dict(), f, indent=2, ensure_ascii=False)
+        except IOError as e:
+            print(f"Error: Failed to save skill to {filepath}: {e}")
+            raise
+        except Exception as e:
+            print(f"Error: Unexpected error saving skill: {e}")
+            raise
     
     def print_skill_info(self, skill: Skill):
         """打印技能信息"""

@@ -68,11 +68,11 @@ def cmd_create(args, manager: SkillManager):
     print("\n创建新技能:")
     name = input("技能名称 (Skill Name): ").strip()
     if not name:
-        print("错误: 技能名称不能为空")
+        print("错误: 技能名称不能为空 (Error: Skill name cannot be empty)")
         sys.exit(1)
     
     if manager.get_skill(name):
-        print(f"错误: 技能 '{name}' 已存在")
+        print(f"错误: 技能 '{name}' 已存在 (Error: Skill '{name}' already exists)")
         sys.exit(1)
     
     description = input("描述 (Description): ").strip()
