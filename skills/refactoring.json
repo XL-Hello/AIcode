@@ -1,0 +1,18 @@
+{
+  "name": "refactoring",
+  "description": "重构技能，改进现有代码的结构而不改变其外部行为",
+  "category": "code_quality",
+  "implementation": "安全的重构流程：\n1. 确保有足够的测试覆盖\n2. 识别代码异味（code smells）\n3. 选择合适的重构模式\n4. 小步骤进行重构\n5. 每次重构后运行测试\n6. 提交代码并记录变更\n7. 持续集成验证",
+  "examples": [
+    "提取重复代码到函数",
+    "分解大型类或函数",
+    "引入设计模式改善代码结构",
+    "优化算法复杂度"
+  ],
+  "metadata": {
+    "tools": ["ide-refactoring", "sonarqube", "code-climate"],
+    "difficulty": "intermediate",
+    "time_estimate": "30分钟-1小时",
+    "languages": ["any"]
+  }
+}

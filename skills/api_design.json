@@ -1,0 +1,18 @@
+{
+  "name": "api_design",
+  "description": "API设计技能，设计RESTful或GraphQL API接口",
+  "category": "architecture",
+  "implementation": "系统化的API设计方法：\n1. 明确API的用途和用户需求\n2. 设计资源模型和端点结构\n3. 定义HTTP方法和状态码\n4. 设计请求和响应格式\n5. 实现认证和授权机制\n6. 添加版本控制和错误处理\n7. 编写API文档",
+  "examples": [
+    "设计用户管理的RESTful API",
+    "创建GraphQL schema用于数据查询",
+    "设计支持分页和过滤的查询接口",
+    "实现OAuth2.0认证流程"
+  ],
+  "metadata": {
+    "tools": ["swagger", "postman", "graphql", "openapi"],
+    "difficulty": "advanced",
+    "time_estimate": "1-2小时",
+    "languages": ["any"]
+  }
+}
