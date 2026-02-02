@@ -1,0 +1,18 @@
+{
+  "name": "microservices_design",
+  "description": "微服务架构设计技能，设计和实现微服务系统",
+  "category": "architecture",
+  "implementation": "微服务架构设计方法：\n1. 识别服务边界和职责\n2. 设计服务间通信机制\n3. 实现服务发现和负载均衡\n4. 配置API网关\n5. 实现分布式事务处理\n6. 设计监控和日志系统\n7. 实现容错和熔断机制",
+  "examples": [
+    "将单体应用拆分为微服务",
+    "使用消息队列实现异步通信",
+    "实现服务熔断器模式",
+    "配置分布式追踪系统"
+  ],
+  "metadata": {
+    "tools": ["kubernetes", "docker", "istio", "kafka", "consul"],
+    "difficulty": "advanced",
+    "time_estimate": "4-8小时",
+    "languages": ["any"]
+  }
+}

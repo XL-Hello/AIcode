@@ -1,0 +1,18 @@
+{
+  "name": "debugging",
+  "description": "调试技能，系统性地定位和修复代码问题",
+  "category": "troubleshooting",
+  "implementation": "结构化的调试方法：\n1. 重现问题并记录错误信息\n2. 分析错误日志和堆栈跟踪\n3. 使用调试工具设置断点\n4. 逐步执行代码，检查变量状态\n5. 分析数据流和控制流\n6. 形成假设并验证\n7. 修复问题并验证解决方案",
+  "examples": [
+    "使用gdb调试C程序段错误",
+    "使用Chrome DevTools调试JavaScript",
+    "使用pdb调试Python运行时错误",
+    "分析内存泄漏问题"
+  ],
+  "metadata": {
+    "tools": ["gdb", "pdb", "chrome-devtools", "visual-studio-debugger"],
+    "difficulty": "intermediate",
+    "time_estimate": "30分钟-2小时",
+    "languages": ["any"]
+  }
+}

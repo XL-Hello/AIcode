@@ -1,0 +1,18 @@
+{
+  "name": "ci_cd_setup",
+  "description": "CI/CD配置技能，搭建持续集成和持续部署流程",
+  "category": "devops",
+  "implementation": "完整的CI/CD搭建流程：\n1. 选择CI/CD平台（GitHub Actions、GitLab CI等）\n2. 配置构建流程\n3. 添加自动化测试\n4. 设置代码质量检查\n5. 配置部署流程\n6. 实现回滚机制\n7. 添加监控和通知",
+  "examples": [
+    "使用GitHub Actions配置自动构建",
+    "设置多环境部署流程",
+    "配置Docker镜像自动构建",
+    "实现蓝绿部署策略"
+  ],
+  "metadata": {
+    "tools": ["github-actions", "jenkins", "gitlab-ci", "circleci", "docker"],
+    "difficulty": "intermediate",
+    "time_estimate": "2-4小时",
+    "languages": ["any"]
+  }
+}

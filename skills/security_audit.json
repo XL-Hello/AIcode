@@ -1,0 +1,18 @@
+{
+  "name": "security_audit",
+  "description": "安全审计技能，检查代码和系统的安全漏洞",
+  "category": "security",
+  "implementation": "系统化的安全审计流程：\n1. 识别潜在的安全风险点\n2. 检查常见安全漏洞（OWASP Top 10）\n3. 审查认证和授权机制\n4. 检查敏感数据处理\n5. 评估依赖项的安全性\n6. 进行渗透测试\n7. 生成安全报告和修复建议",
+  "examples": [
+    "检查SQL注入漏洞",
+    "审查密码存储和加密方式",
+    "验证API访问控制",
+    "扫描依赖项已知漏洞"
+  ],
+  "metadata": {
+    "tools": ["snyk", "owasp-zap", "burp-suite", "bandit", "safety"],
+    "difficulty": "advanced",
+    "time_estimate": "1-3小时",
+    "languages": ["any"]
+  }
+}

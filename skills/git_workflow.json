@@ -1,0 +1,18 @@
+{
+  "name": "git_workflow",
+  "description": "Git工作流技能，管理代码版本和团队协作",
+  "category": "version_control",
+  "implementation": "Git工作流最佳实践：\n1. 选择合适的分支策略（Git Flow、GitHub Flow等）\n2. 制定提交规范\n3. 使用分支进行功能开发\n4. 进行代码审查和合并\n5. 解决合并冲突\n6. 使用标签管理版本\n7. 编写清晰的提交信息",
+  "examples": [
+    "实施Git Flow工作流",
+    "使用rebase保持干净的提交历史",
+    "处理复杂的合并冲突",
+    "使用git bisect定位问题提交"
+  ],
+  "metadata": {
+    "tools": ["git", "github", "gitlab", "gitk", "tig"],
+    "difficulty": "intermediate",
+    "time_estimate": "1-2小时",
+    "languages": ["any"]
+  }
+}

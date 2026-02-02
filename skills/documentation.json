@@ -1,0 +1,18 @@
+{
+  "name": "documentation",
+  "description": "文档编写技能，为代码和项目创建清晰的文档",
+  "category": "communication",
+  "implementation": "完整的文档编写流程：\n1. 确定目标受众和文档类型\n2. 创建文档大纲\n3. 编写清晰的说明和示例\n4. 添加代码注释和docstrings\n5. 创建README、API文档、用户指南\n6. 添加图表和示例代码\n7. 审查和更新文档",
+  "examples": [
+    "编写Python模块的docstring",
+    "创建项目README.md文件",
+    "使用Swagger生成API文档",
+    "编写用户使用手册"
+  ],
+  "metadata": {
+    "tools": ["markdown", "sphinx", "javadoc", "jsdoc", "swagger"],
+    "difficulty": "beginner",
+    "time_estimate": "30分钟-1小时",
+    "languages": ["any"]
+  }
+}

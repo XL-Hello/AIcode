@@ -1,0 +1,18 @@
+{
+  "name": "database_design",
+  "description": "数据库设计技能，设计高效可扩展的数据库架构",
+  "category": "architecture",
+  "implementation": "数据库设计最佳实践：\n1. 需求分析和数据建模\n2. 设计实体关系图（ERD）\n3. 规范化数据结构\n4. 定义主键、外键和索引\n5. 考虑查询性能优化\n6. 设计数据迁移策略\n7. 实现数据备份和恢复机制",
+  "examples": [
+    "设计电商系统数据库",
+    "优化慢查询性能",
+    "实现数据分区策略",
+    "设计多租户数据库架构"
+  ],
+  "metadata": {
+    "tools": ["mysql-workbench", "pgadmin", "dbeaver", "lucidchart"],
+    "difficulty": "intermediate",
+    "time_estimate": "2-3小时",
+    "languages": ["sql"]
+  }
+}

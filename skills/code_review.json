@@ -1,0 +1,18 @@
+{
+  "name": "code_review",
+  "description": "代码审查技能，帮助检查代码质量、潜在bug和改进建议",
+  "category": "code_quality",
+  "implementation": "使用静态分析工具和人工审查相结合的方法：\n1. 运行linter检查代码风格\n2. 检查潜在的安全漏洞\n3. 评估代码可读性和可维护性\n4. 检查是否遵循最佳实践\n5. 提供改进建议",
+  "examples": [
+    "对Python代码进行PEP8风格检查",
+    "使用ESLint审查JavaScript代码",
+    "检查SQL注入和XSS漏洞",
+    "评估函数复杂度和代码重复"
+  ],
+  "metadata": {
+    "tools": ["pylint", "eslint", "flake8", "sonarqube"],
+    "difficulty": "intermediate",
+    "time_estimate": "15-30分钟",
+    "languages": ["python", "javascript", "java", "c++"]
+  }
+}
