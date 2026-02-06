@@ -5,23 +5,138 @@
 - 将目标项目放在 [projects](projects) 下。
 - 然后利用 [skills](skills) 下的方法进行相关的AI操作。
 
-目录：
-- [projects](projects)
-- [skills](skills)
+## 目录
+- [projects](projects): 存放待处理的工程项目。
+- [skills](skills): 存放各种 AI 技能及其执行规范。
 
 ## Skills 概述
 
 以下是 [skills](skills) 文件夹下的所有技能及其简短描述：
 
+- **architect**: 系统架构设计与方案对比，输出高层设计、权衡、风险与分阶段落地计划。
 - **article-extractor**: 从URL提取干净的文章内容（博客文章、教程等），去除广告和导航，保存为可读文本。
 - **changelog-generator**: 从git提交自动生成面向用户的变更日志，将技术提交转换为清晰的客户友好发布说明。
+- **coder**: 实际编写、修改与重构代码（含创建文件、运行命令、实现功能），遵循项目约定并尽量用最小改动达成目标。
+- **dry-refactoring**: 以 DRY（Don't Repeat Yourself）为核心的系统性重构流程：识别重复 → 抽象 → 替换 → 验证。
+- **explorer**: 快速在代码库中定位文件/符号/模式，输出精确位置与下一步建议，避免过度设计。
 - **file-organizer**: 智能组织计算机上的文件和文件夹，查找重复项，建议更好的结构，并自动化清理任务。
+- **gen_readme**: 为 C 语言项目或单个 .c 文件生成结构化的 README.md 文档。
+- **plan**: 复杂任务的迭代式规划指南：收集信息 → 草拟计划 → 澄清问题 → 等待批准 → 再实施。
 - **prompt-engineering**: 用于编写命令、钩子、技能或提示，包括优化提示、改进LLM输出或设计生产提示模板。
 - **review-code**: 全面的代码审查技能，涵盖正确性、安全性、性能、可读性、测试和架构六个维度。
+- **shell-scripting**: bash/zsh 脚本与 CLI 工具开发最佳实践（健壮性、错误处理、参数解析与常见模式）。
 - **ship-learn-next**: 将学习内容（如YouTube转录、文章、教程）转换为可操作的实施计划，使用Ship-Learn-Next框架。
 - **software-architecture**: 质量导向的软件架构指南，基于Clean Architecture和Domain Driven Design原则。
 - **test-driven-development**: 测试驱动开发技能，在编写实现代码前先写测试。
 - **using-git-worktrees**: 创建隔离的git工作树，用于功能开发或实施计划执行，具有智能目录选择和安全验证。
+
+## Skills: architect
+
+### 触发方式
+当需要进行复杂功能/系统的高层设计、架构取舍、风险评估、分阶段落地或技术路线决策时激活。
+
+### AI内执行流程
+1. 澄清需求与约束：目标、非目标、边界、性能/成本/合规约束。
+2. 提供可选方案：至少 2 种路径（如演进式改造 vs. 重构式替换）。
+3. 权衡与决策点：明确 pros/cons 与需要对齐的关键决策。
+4. 风险与依赖：识别外部依赖、迁移成本、回滚策略。
+5. 分阶段计划：给出里程碑、验收标准与渐进式交付顺序。
+
+### 产出（自动生成）
+- 架构概览/实施计划/决策清单（用于对齐 stakeholder）。
+
+### 参考
+- [skills/architect/SKILL.md](skills/architect/SKILL.md)
+- [skills/architect/README.md](skills/architect/README.md)
+
+## Skills: coder
+
+### 触发方式
+当需要实际写代码、修改文件、实现功能、修复问题或进行重构，并希望 AI 直接动手完成时激活。
+
+### AI内执行流程
+1. 收集上下文：明确目标、影响范围、约束与验收标准。
+2. 最小化改动实现：遵循既有风格与约定，尽量小而准地修改。
+3. 验证：运行测试/构建/静态检查（若项目支持）。
+4. 总结与交接：说明改动点、潜在风险与后续建议。
+
+### 产出（自动生成）
+- 代码变更（实现/修复/重构）以及必要的运行说明。
+
+### 参考
+- [skills/coder/SKILL.md](skills/coder/SKILL.md)
+- [skills/coder/README.md](skills/coder/README.md)
+
+## Skills: explorer
+
+### 触发方式
+当需要快速定位文件、函数/类定义、调用链、配置入口或某类模式代码（而不需要深度方案设计）时激活。
+
+### AI内执行流程
+1. 快速检索：按关键词/路径/符号搜索定位候选区域。
+2. 精确定位：列出定义/引用位置与关键文件。
+3. 输出导航建议：给出下一步最值得看的文件/符号。
+4. 保持轻量：避免在探索阶段做大改动或过度推断。
+
+### 产出（自动生成）
+- 文件与位置清单 + 简要说明（用于后续实现/审查/排障）。
+
+### 参考
+- [skills/explorer/SKILL.md](skills/explorer/SKILL.md)
+- [skills/explorer/README.md](skills/explorer/README.md)
+
+## Skills: plan
+
+### 触发方式
+当任务非琐碎、存在多种实现路径、需要对齐策略或拆解步骤时激活（通常在实现之前）。
+
+### AI内执行流程
+1. 收集信息：探索代码库、依赖、约束与风险点。
+2. 草拟计划：目标（Objective）/ 方法（Approach）/ 步骤（Steps）/ 验证（Verification）。
+3. 澄清问题：至少 3 个澄清问题，并给出建议答案。
+4. 等待批准：用户确认“go ahead”（或空回复视为批准）。
+5. 再实施：批准后再进入实际编码/修改。
+
+### 产出（自动生成）
+- 可执行的分步计划（含验证方式与需要对齐的决策点）。
+
+### 参考
+- [skills/plan/SKILL.md](skills/plan/SKILL.md)
+- [skills/plan/references/principles.md](skills/plan/references/principles.md)
+
+## Skills: dry-refactoring
+
+### 触发方式
+当用户希望消除重复代码、应用 DRY 原则、处理复制粘贴/重复逻辑/魔术数字等“代码坏味道”时激活。
+
+### AI内执行流程
+1. 识别重复：定位明显重复与语义重复，记录所有重复点。
+2. 抽象逻辑：区分可变/不变部分，选择合适抽象形式（函数/类/模块/常量/高阶函数）。
+3. 替换实现：系统性替换所有重复点，避免新旧混用造成不一致。
+4. 验证与测试：单测/集成测试/必要时手动验证与性能对比。
+
+### 产出（自动生成）
+- 新的可复用抽象、删除重复实现，并通过验证/测试。
+
+### 参考
+- [skills/dry-refactoring/SKILL.md](skills/dry-refactoring/SKILL.md)
+
+## Skills: shell-scripting
+
+### 触发方式
+当需要编写或调试 bash/zsh 脚本、自动化任务、构建/部署脚本，或开发 CLI 工具时激活。
+
+### AI内执行流程
+1. 采用健壮模板：使用 `set -euo pipefail`、安全的 `IFS` 与清晰的脚本结构。
+2. 参数解析与帮助：提供 `usage()`、支持常用 flags（如 `--help`/`--verbose`/`--dry-run`）。
+3. 错误处理与清理：统一 `error()`/日志输出，使用 `trap` 做清理与中断处理。
+4. 常见模式落地：变量展开、数组/关联数组、循环与 I/O 等可维护写法。
+
+### 产出（自动生成）
+- 可复用脚本模板/CLI 骨架，以及面向目标任务的脚本实现。
+
+### 参考
+- [skills/shell-scripting/SKILL.md](skills/shell-scripting/SKILL.md)
 
 ## Skills: review-code
 
@@ -110,6 +225,22 @@
 
 ### 参考
 - [skills/file-organizer/SKILL.md](skills/file-organizer/SKILL.md)
+
+## Skills: gen_readme
+
+### 触发方式
+当需要为 C 语言项目或单个 .c 文件创建 README.md、记录 C 代码、或提及 "gen_readme" 时激活。
+
+### AI内执行流程
+1. 环境检查：使用 `tree` 检查目录结构（排除编译文件）或阅读指定文件。
+2. 内容生成：提取模块概述、文件结构、核心特性、API 定义、逻辑流转（流程图）、集成示例等。
+3. 文档优化：确保文档简洁明了，使用中文（模块名包含英文）。
+
+### 产出（自动生成）
+- 结构化的 README.md 文件。
+
+### 参考
+- [skills/gen_readme/SKILL.md](skills/gen_readme/SKILL.md)
 
 ## Skills: prompt-engineering
 
