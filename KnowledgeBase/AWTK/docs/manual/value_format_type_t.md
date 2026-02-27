@@ -1,0 +1,23 @@
+## value_format_type_t
+
+### 概述
+
+属性描述格式常量定义。
+
+### 常量
+
+名称 | 说明  
+---|---  
+VALUE_FORMAT_TYPE_NONE | 无特殊格式。  
+VALUE_FORMAT_TYPE_HEX | 16进制格式。  
+VALUE_FORMAT_TYPE_UNSIGNED | 非负格式(用于进一步限制float/double)。  
+VALUE_FORMAT_TYPE_PHONE | 手机号码格式。  
+VALUE_FORMAT_TYPE_EMAIL | 邮件格式。  
+VALUE_FORMAT_TYPE_IP4_ADDRESS | ip4地址格式。  
+VALUE_FORMAT_TYPE_DOMAIN_NAME | 域名格式。  
+VALUE_FORMAT_TYPE_URL | URL格式。  
+VALUE_FORMAT_TYPE_JSON | JSON格式。  
+VALUE_FORMAT_TYPE_XML | XML格式。  
+VALUE_FORMAT_TYPE_UBJSON | UBJSON格式。  
+VALUE_FORMAT_TYPE_JS | JS格式。  
+VALUE_FORMAT_TYPE_CSV | CSV格式。

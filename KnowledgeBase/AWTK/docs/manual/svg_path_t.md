@@ -1,0 +1,38 @@
+## svg_path_t
+
+### 概述
+
+* * *
+
+### 函数
+
+函数名称 | 说明  
+---|---  
+svg_path_parse | 解析路径。  
+  
+#### svg_path_parse 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 解析路径。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t svg_path_parse (const char* path, void* ctx, tk_visit_t on_path);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。  
+path | const char* | 路径数据。  
+ctx | void* | 回调函数上下文。  
+on_path | tk_visit_t | 路径处理回调函数。

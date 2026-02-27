@@ -1,0 +1,239 @@
+## g2d_t
+
+### 概述
+
+## 2D加速接口。
+
+### 函数
+
+函数名称 | 说明  
+---|---  
+g2d_blend_image | 把图片指定的区域渲染到framebuffer指定的区域，src的大小和dst的大小不一致则进行缩放。  
+g2d_blend_image_rotate | 把图片指定的区域渲染到framebuffer指定的区域，src的大小和dst的大小不一致则进行缩放以及旋转。  
+g2d_copy_image | 把图片指定的区域拷贝到framebuffer中。  
+g2d_fill_rect | 用颜色填充指定的区域。  
+g2d_rotate_image | 把图片指定的区域进行旋转并拷贝到framebuffer相应的区域，本函数主要用于辅助实现横屏和竖屏的切换，一般支持90度旋转即可。  
+g2d_rotate_image_ex | 把图片指定的区域进行旋转。  
+tk_g2d_deinit | 反初始化g2d模块。  
+tk_g2d_init | 初始化g2d模块。  
+  
+#### g2d_blend_image 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 把图片指定的区域渲染到framebuffer指定的区域，src的大小和dst的大小不一致则进行缩放。 1.硬件不支持缩放，则返回NOT_IMPL。 2.硬件不支持全局alpha，global_alpha!=0xff时返回NOT_IMPL。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_blend_image (bitmap_t* fb, bitmap_t* img, const rect_t* dst, const rect_t* src, uint8_t global_alpha);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+fb | bitmap_t* | framebuffer对象。  
+img | bitmap_t* | 图片对象。  
+dst | const rect_t* | 目的区域。  
+src | const rect_t* | 源区域。  
+global_alpha | uint8_t | 全局alpha。  
+  
+#### g2d_blend_image_rotate 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 把图片指定的区域渲染到framebuffer指定的区域，src的大小和dst的大小不一致则进行缩放以及旋转。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_blend_image_rotate (bitmap_t* dst, bitmap_t* src, const rectf_t* dst_r, const rectf_t* src_r, uint8_t alpha, lcd_orientation_t o);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+dst | bitmap_t* | 目标图片对象。  
+src | bitmap_t* | 源图片对象。  
+dst_r | const rectf_t* | 目的区域。（坐标原点为旋转后的坐标系原点，并非是 dst 的左上角）  
+src_r | const rectf_t* | 源区域。  
+alpha | uint8_t | 全局alpha。  
+o | lcd_orientation_t | 旋转角度(一般支持90度即可，旋转方向为逆时针)。  
+  
+#### g2d_copy_image 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 把图片指定的区域拷贝到framebuffer中。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_copy_image (bitmap_t* fb, bitmap_t* img, const rect_t* src, xy_t dx, xy_t dy);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+fb | bitmap_t* | framebuffer对象。  
+img | bitmap_t* | 图片对象。  
+src | const rect_t* | 要拷贝的区域。  
+dx | xy_t | 目标位置的x坐标。  
+dy | xy_t | 目标位置的y坐标。  
+  
+#### g2d_fill_rect 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 用颜色填充指定的区域。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_fill_rect (bitmap_t* fb, const rect_t* dst, color_t c);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+fb | bitmap_t* | framebuffer对象。  
+dst | const rect_t* | 要填充的目标区域。  
+c | color_t | 颜色。  
+  
+#### g2d_rotate_image 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 把图片指定的区域进行旋转并拷贝到framebuffer相应的区域，本函数主要用于辅助实现横屏和竖屏的切换，一般支持90度旋转即可。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_rotate_image (bitmap_t* fb, bitmap_t* img, const rect_t* src, lcd_orientation_t o);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+fb | bitmap_t* | framebuffer对象。  
+img | bitmap_t* | 图片对象。  
+src | const rect_t* | 要旋转并拷贝的区域。  
+o | lcd_orientation_t | 旋转角度(一般支持90度即可)。  
+  
+#### g2d_rotate_image_ex 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 把图片指定的区域进行旋转。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t g2d_rotate_image_ex (bitmap_t* dst, bitmap_t* src, const rect_t* src_r, xy_t dx, xy_t dy, lcd_orientation_t o);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败，返回失败则上层用软件实现。  
+dst | bitmap_t* | 目标图片对象。  
+src | bitmap_t* | 源图片对象。  
+src_r | const rect_t* | 要旋转并拷贝的区域。  
+dx | xy_t | 目标位置的x坐标。（坐标原点为旋转后的坐标系原点，并非是 dst 的左上角）  
+dy | xy_t | 目标位置的y坐标。（坐标原点为旋转后的坐标系原点，并非是 dst 的左上角）  
+o | lcd_orientation_t | 旋转角度(一般支持90度即可，旋转方向为逆时针)。  
+  
+#### tk_g2d_deinit 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 反初始化g2d模块。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t tk_g2d_deinit ();
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。  
+  
+#### tk_g2d_init 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 初始化g2d模块。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t tk_g2d_init ();
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。

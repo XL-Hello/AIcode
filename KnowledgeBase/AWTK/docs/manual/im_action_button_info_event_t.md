@@ -1,0 +1,40 @@
+## im_action_button_info_event_t
+
+### 概述
+
+![image](images/im_action_button_info_event_t_0.png)
+
+## 设置软键盘上的action按钮的信息事件。
+
+### 属性
+
+属性名称 | 类型 | 说明  
+---|---|---  
+enable | bool_t | 软键盘上的action按钮启用。  
+text | const char* | 软键盘上的action按钮显示的文本。  
+  
+#### enable 属性
+
+* * *
+
+> 软键盘上的action按钮启用。
+
+  * 类型：bool_t
+
+特性 | 是否支持  
+---|---  
+可直接读取 | 是  
+可直接修改 | 否  
+  
+#### text 属性
+
+* * *
+
+> 软键盘上的action按钮显示的文本。
+
+  * 类型：const char*
+
+特性 | 是否支持  
+---|---  
+可直接读取 | 是  
+可直接修改 | 否

@@ -1,0 +1,17 @@
+## encoding_name_t
+
+### 概述
+
+编码名称。
+
+### 常量
+
+名称 | 说明  
+---|---  
+ENCODING_UTF8 | UTF-8。  
+ENCODING_UTF16 | UTF-16。  
+ENCODING_UTF32 | UTF-32。  
+ENCODING_GBK | GBK。  
+ENCODING_BIG | BIG5-2003。  
+ENCODING_GB2312 | GB_2312-80。  
+ENCODING_GB18030 | GB18030。

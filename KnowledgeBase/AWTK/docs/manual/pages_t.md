@@ -1,0 +1,266 @@
+## pages_t
+
+### 概述
+
+![image](images/pages_t_0.png)
+
+页面管理控件。
+
+只有一个Page处于active状态，处于active状态的Page才能显示并接收事件。 常用于实现标签控件中的页面管理。
+
+pages_t是[widget_t](widget_t.html)的子类控件， widget_t的函数均适用于pages_t控件。
+
+在xml中使用”pages”标签创建页面管理控件。如：
+    
+    
+    <tab_control x="0" y="0" w="100%" h="100%" >
+    <pages x="c" y="20" w="90%" h="-60" value="1">
+    ...
+    </pages>
+    <tab_button_group>
+    ...
+    </tab_button_group>
+    </tab_control>
+    
+
+> 更多用法请参考： [tab control](https://github.com/zlgopen/awtk/blob/master/design/default/ui/)
+
+* * *
+
+### 函数
+
+函数名称 | 说明  
+---|---  
+pages_cast | 转换为pages对象(供脚本语言使用)。  
+pages_create | 创建pages对象  
+pages_get_widget_vtable | 获取 pages 虚表。  
+pages_set_active | 设置当前的Page。  
+pages_set_active_by_name | 通过页面的名字设置当前的Page。  
+pages_set_auto_focused | 设置切换界面时是否自动聚焦。  
+  
+### 属性
+
+属性名称 | 类型 | 说明  
+---|---|---  
+active | uint32_t | 当前活跃的page。(需要用到 MVVM 数据绑定请设置 value 属性)  
+auto_focused | bool_t | 选择切换界面时是否自动聚焦上一次保存的焦点。（默认为TRUE）  
+value | uint32_t | 当前活跃的page。  
+  
+### 事件
+
+事件名称 | 类型 | 说明  
+---|---|---  
+EVT_VALUE_WILL_CHANGE | value_change_event_t | 值(当前页)即将改变事件。  
+EVT_VALUE_CHANGED | value_change_event_t | 值(当前页)改变事件。  
+  
+#### pages_cast 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 转换为pages对象(供脚本语言使用)。
+
+  * 函数原型：
+
+
+    
+    
+    widget_t* pages_cast (widget_t* widget);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | widget_t* | pages对象。  
+widget | widget_t* | pages对象。  
+  
+#### pages_create 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 创建pages对象
+
+  * 函数原型：
+
+
+    
+    
+    widget_t* pages_create (widget_t* parent, xy_t x, xy_t y, wh_t w, wh_t h);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | widget_t* | 对象。  
+parent | widget_t* | 父控件  
+x | xy_t | x坐标  
+y | xy_t | y坐标  
+w | wh_t | 宽度  
+h | wh_t | 高度  
+  
+#### pages_get_widget_vtable 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 获取 pages 虚表。
+
+  * 函数原型：
+
+
+    
+    
+    const widget_vtable_t* pages_get_widget_vtable ();
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | const widget_vtable_t* | 成功返回 pages 虚表。  
+  
+#### pages_set_active 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 设置当前的Page。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t pages_set_active (widget_t* widget, uint32_t index);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。  
+widget | widget_t* | 控件对象。  
+index | uint32_t | 当前Page的序号。  
+  
+#### pages_set_active_by_name 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 通过页面的名字设置当前的Page。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t pages_set_active_by_name (widget_t* widget, const char* name);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。  
+widget | widget_t* | 控件对象。  
+name | const char* | 当前Page的名字。  
+  
+#### pages_set_auto_focused 函数
+
+* * *
+
+  * 函数功能：
+
+
+
+> 设置切换界面时是否自动聚焦。
+
+  * 函数原型：
+
+
+    
+    
+    ret_t pages_set_auto_focused (widget_t* widget, bool_t auto_focused);
+    
+
+  * 参数说明：
+
+参数 | 类型 | 说明  
+---|---|---  
+返回值 | ret_t | 返回RET_OK表示成功，否则表示失败。  
+widget | widget_t* | 控件对象。  
+auto_focused | bool_t | 切换界面时是否自动聚焦。  
+  
+#### active 属性
+
+* * *
+
+> 当前活跃的page。(需要用到 MVVM 数据绑定请设置 value 属性)
+
+  * 类型：uint32_t
+
+特性 | 是否支持  
+---|---  
+可直接读取 | 是  
+可直接修改 | 否  
+可持久化 | 是  
+可脚本化 | 是  
+可在IDE中设置 | 是  
+可在XML中设置 | 是  
+可通过widget_get_prop读取 | 是  
+可通过widget_set_prop修改 | 是  
+  
+#### auto_focused 属性
+
+* * *
+
+> 选择切换界面时是否自动聚焦上一次保存的焦点。（默认为TRUE）
+
+  * 类型：bool_t
+
+特性 | 是否支持  
+---|---  
+可直接读取 | 是  
+可直接修改 | 否  
+可持久化 | 是  
+可脚本化 | 是  
+可在IDE中设置 | 是  
+可在XML中设置 | 是  
+可通过widget_get_prop读取 | 是  
+可通过widget_set_prop修改 | 是  
+  
+#### value 属性
+
+* * *
+
+> 当前活跃的page。
+
+  * 类型：uint32_t
+
+特性 | 是否支持  
+---|---  
+可直接读取 | 是  
+可直接修改 | 否  
+可持久化 | 是  
+可在IDE中设置 | 是  
+可在XML中设置 | 是  
+可通过widget_get_prop读取 | 是  
+可通过widget_set_prop修改 | 是

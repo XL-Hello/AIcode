@@ -1,0 +1,42 @@
+## widget_state_t
+
+### 概述
+
+控件状态常量定义。
+
+这里指定常用的状态值，扩展控件可以在自己的头文件中定义私有的状态。
+
+### 常量
+
+名称 | 说明  
+---|---  
+WIDGET_STATE_NONE | 无效状态。  
+WIDGET_STATE_NORMAL | 正常状态。  
+WIDGET_STATE_ACTIVATED | 3/5keys模式时，进入激活状态(此时方向键用于修改值)。  
+WIDGET_STATE_CHANGED | 内容被修改的状态。  
+WIDGET_STATE_PRESSED | 指针按下状态。  
+WIDGET_STATE_OVER | 指针悬浮状态。  
+WIDGET_STATE_DISABLE | 禁用状态。  
+WIDGET_STATE_FOCUSED | 聚焦状态。  
+WIDGET_STATE_CHECKED | 勾选状态。  
+WIDGET_STATE_UNCHECKED | 没勾选状态。  
+WIDGET_STATE_EMPTY | 编辑器无内容状态。  
+WIDGET_STATE_EMPTY_FOCUS | 编辑器无内容同时聚焦的状态。  
+WIDGET_STATE_EMPTY_OVER | 编辑器无内容同时指针悬浮的状态。  
+WIDGET_STATE_ERROR | 输入错误状态。  
+WIDGET_STATE_SELECTED | 选中状态。  
+WIDGET_STATE_NORMAL_OF_CHECKED | 正常状态(选中项)。  
+WIDGET_STATE_PRESSED_OF_CHECKED | 指针按下状态(选中项)。  
+WIDGET_STATE_OVER_OF_CHECKED | 指针悬浮状态(选中项)。  
+WIDGET_STATE_DISABLE_OF_CHECKED | 禁用状态(选中项)。  
+WIDGET_STATE_FOCUSED_OF_CHECKED | 焦点状态(选中项)。  
+WIDGET_STATE_NORMAL_OF_ACTIVE | 正常状态(当前项)。  
+WIDGET_STATE_PRESSED_OF_ACTIVE | 指针按下状态(当前项)。  
+WIDGET_STATE_OVER_OF_ACTIVE | 指针悬浮状态(当前项)。  
+WIDGET_STATE_DISABLE_OF_ACTIVE | 禁用状态(当前项)。  
+WIDGET_STATE_FOCUSED_OF_ACTIVE | 焦点状态(当前项)。  
+WIDGET_STATE_NORMAL_OF_INDETERMINATE | 正常状态(选项不确定)。  
+WIDGET_STATE_PRESSED_OF_INDETERMINATE | 指针按下状态(选项不确定)。  
+WIDGET_STATE_OVER_OF_INDETERMINATE | 指针悬浮状态(选项不确定)。  
+WIDGET_STATE_DISABLE_OF_INDETERMINATE | 禁用状态(选项不确定)。  
+WIDGET_STATE_FOCUSED_OF_INDETERMINATE | 焦点状态(选项不确定)。
