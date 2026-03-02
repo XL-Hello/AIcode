@@ -1,3 +1,17 @@
 {
+    // 文件关联：让 VS Code 正确识别 AWTK 相关文件类型
+    "files.associations": {
+        "*.h": "c",   // 将 .h 视为 C 语言头文件
+        "*.inc": "c"  // 将 AWTK 常用的 .inc 文件视为 C 代码
+    },
+
+    // 文件排除：在资源管理器中隐藏编译生成的中间文件
+    "files.exclude": {
+        "**/*.o": true,        // 隐藏编译生成的 .o 目标文件
+        "**/__pycache__": true // 隐藏 Python 缓存目录
+    },
+
+    // 文本编码：明确指定使用 UTF-8 编码
+    "files.encoding": "utf8",
     "python-envs.defaultEnvManager": "ms-python.python:system"
 }
