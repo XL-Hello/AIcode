@@ -75,6 +75,8 @@
   - 入口：[skills/review-code_pro/SKILL.md](skills/review-code_pro/SKILL.md)
 - **code-review-skill**（OPTIONAL）：更偏“审查方法论+沟通话术+语言/框架清单”的 reviewer playbook。
   - 入口：[skills/code-review-skill/SKILL.md](skills/code-review-skill/SKILL.md) / [skills/code-review-skill/SKILL_CN.md](skills/code-review-skill/SKILL_CN.md)
+- **project_git_review**（RECOMMENDED）：多项目联合代码审查，支持根据 Git 提交记录自动识别变更的应用并进行交叉审查，产出结构化审查报告。
+  - 入口：[skills/project_git_review/README.md](skills/project_git_review/README.md)
 - **pr-review-toolkit**（OPTIONAL）：PR 审查工具箱（多个专用 agent：注释/测试/静默失败/类型/简化等），适合定向扫雷。
   - 入口：[skills/pr-review-toolkit/README.md](skills/pr-review-toolkit/README.md)
 
