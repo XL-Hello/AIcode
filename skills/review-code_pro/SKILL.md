@@ -1,5 +1,5 @@
 ---
-name: review-code_2
+name: review-code_pro
 description: Multi-dimensional code review with structured reports. Analyzes correctness, readability, performance, security, testing, and architecture, and respects project-specific conventions defined in dreame_code.md. Triggers on "review code", "code review", "审查代码", "代码审查".
 allowed-tools: Task, AskUserQuestion, Read, Write, Glob, Grep, Bash, mcp__ace-tool__search_context, mcp__ide__getDiagnostics
 ---
