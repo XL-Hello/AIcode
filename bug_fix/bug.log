@@ -1,0 +1,593 @@
+[   44.068778] [10] [NOTICE] [ap] start_point=640,energy_point=248665
+[   44.070020] [10] [NOTICE] [ap] start_point=768,energy_point=480913
+[   44.071262] [10] [NOTICE] [ap] start_point=896,energy_point=818770
+[   44.072504] [10] [NOTICE] [ap] start_point=1024,energy_point=1201930
+[   44.073202] [10] [NOTICE] [ap] min_gain=10
+[   44.073668] [10] [NOTICE] [ap] gain_sweep_start
+[   44.074212] [10] [NOTICE] [ap] search area:256======384
+[   44.080499] [10] [NOTICE] [ap] chosen gain_mis_base=348,Energy_bak=1658
+[   44.081198] [10] [NOTICE] [ap] gain_sweep_end
+[   44.082362] [10] [NOTICE] [ap] start_point=-1024,energy_point=3070090
+[   44.083682] [10] [NOTICE] [ap] start_point=-896,energy_point=2445921
+[   44.084924] [10] [NOTICE] [ap] start_point=-768,energy_point=1809817
+[   44.086166] [10] [NOTICE] [ap] start_point=-640,energy_point=1336480
+[   44.087408] [10] [NOTICE] [ap] start_point=-512,energy_point=878090
+[   44.088650] [10] [NOTICE] [ap] start_point=-384,energy_point=576008
+[   44.089892] [10] [NOTICE] [ap] start_point=-256,energy_point=308765
+[   44.091134] [10] [NOTICE] [ap] start_point=-128,energy_point=125073
+[   44.092376] [10] [NOTICE] [ap] start_point=0,energy_point=26704
+[   44.093619] [10] [NOTICE] [ap] start_point=128,energy_point=1681
+[   44.094861] [10] [NOTICE] [ap] start_point=256,energy_point=58896
+[   44.096103] [10] [NOTICE] [ap] start_point=384,energy_point=186905
+[   44.097345] [10] [NOTICE] [ap] start_point=512,energy_point=425232
+[   44.098587] [10] [NOTICE] [ap] start_point=640,energy_point=715349
+[   44.099829] [10] [NOTICE] [ap] start_point=768,energy_point=1049801
+[   44.101071] [10] [NOTICE] [ap] start_point=896,energy_point=1507060
+[   44.102313] [10] [NOTICE] [ap] start_point=1024,energy_point=1999714
+[   44.102934] [10] [NOTICE] [ap] min_phase=8
+[   44.103477] [10] [NOTICE] [ap] phase_sweep_start
+[   44.104098] [10] [NOTICE] [ap] search area:0======128
+[   44.110308] [10] [NOTICE] [ap] chosen phase_mis_base=115,Energy_tmp1=529
+[   44.111007] [10] [NOTICE] [ap] phase_sweep_end
+[   44.112172] [10] [NOTICE] [ap] end:phase_mis_base=115,gain_mis_base=348,Energy_tmp=1800
+[   44.113258] [10] [NOTICE] [ap] iq_compensate_by_temperature_2003 line1940 ()< 
+[   44.114035] [10] [NOTICE] [ap] wifi_config_40m, 1
+[   44.114656] [10] [NOTICE] [ap] 0x9010807c= 0x00000001
+[   44.115277] [10] [NOTICE] [ap] 0x90100c00= 0x00b47fdf
+[   44.119934] [14] [NOTICE] [ap] [In 10s][txSucc:217 rxSucc:216 rxleak:0 txFail:26 txRetry:213 txEffi:50 txbps=39421 rxbps=80549]
+[   44.121332] [14] [NOTICE] [ap] [In 10s][tx:mcs=7 ht40=1 rx(idx=5, ht=1) rssi=-60 channel=36 FDD=1 nts_heap:287792]
+[   44.284350] [13] [NOTICE] [ap] bh:tx(id=0) len=110 stat=6 [DNS] [00:80:43:00:00:21->50:4f:3b:73:b0:fa BSSID=(50:4f:3b:73:b0:fc)]
+
+[   45.477487] [95] [  INFO] [ap] [gateway W][_dm_connStatus:909]  value:{"loginStatus":0,"loginToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwNWEyOTM1NDNkODMxMDBiIiwicGlkIjoiMjAwMDAwMDAxMyIsImNsaWVudFR5cGUiOiJkZXZpY2UiLCJsb2dpblRpbWUiOjE3NzQ0OTU4ODMwMDksInN1YiI6ImRlZmF1bHQiLCJhdWQiOlsibG9naW4iXSwiZXhwIjoxNzc1MTAwNjgzfQ.uPQiDGWbLZX6v5wXvv58DCOFa3T8Yz4JRoyMyN6nypk"}
+[   45.481524] [95] [  INFO] [ap] [gateway W][_dm_connStatus:921] loginStatusFlag:0 oldStatus:1
+[   45.513700] [CPU1] [149] [a7] [INFO] [AWTK] [11:31:36.229][INFO][dreUI_msgServerRecvBus](459) recv bus msg, cmd: uploadNetStatus, serial 159318, value <{"netStatus":"unavailable","netType":"wifi","ip":"192.168.31.247"}>
+
+[   45.517600] [CPU1] [149] [a7] [INFO] [AWTK] [11:31:36.233][INFO][dreUI_msgServerRecvBus](459) recv bus msg, cmd: connStatus, serial 290331372, value <{"loginStatus":0,"loginToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwNWEyOTM1NDNkODMxMDBiIiwicGlkIjoiMjAwMDAwMDAxMyIsImNsaWVudFR5cGUiOiJkZXZpY2UiLCJsb2dpblRpbWUiOjE3NzQ0OTU4ODMwMDksInN1YiI6ImRlZmF1bHQiLCJhdWQiOlsibG9naW4iXSwiZXhwIjoxNzc1MTAwNjgzfQ.uPQiDGWbLZX6v5wXvv58DCOFa3T8Yz4JRoyMyN6nypk"}>
+
+[   45.585200] [CPU1] [49] [a7] [INFO] [AWTK] [11:31:36.300][INFO][dreUI_msgService_recvuploadNetStatus](276) uploadNetStatus. value:<{"netStatus":"unavailable","netType":"wifi","ip":"192.168.31.247"}>
+[   45.585500] [CPU1] [49] [a7] [INFO] [AWTK] [11:31:36.301][INFO][dreUI_dataServer_busInfoUpdate](194) set loginStatus: 0
+[   45.585500] [CPU1] [49] [a7] [INFO] [AWTK] [11:31:36.301][INFO][dreUI_dataServer_busInfoUpdate](200) set loginToken: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIwNWEyOTM1NDNkODMxMDBiIiwicGlkIjoiMjAwMDAwMDAxMyIsImNsaWVudFR5cGUiOiJkZXZpY2UiLCJsb2dpblRpbWUiOjE3NzQ0OTU4ODMwMDksInN1YiI6ImRlZmF1bHQiLCJhdWQiOlsibG9naW4iXSwiZXhwIjoxNzc1MTAwNjgzfQ.uPQiDGWbLZX6v5wXvv58DCOFa3T8Yz4JRoyMyN6nypk
+[   45.585700] [CPU1] [49] [a7] [INFO] [AWTK] [11:31:36.301][INFO][_mg_dataUpdate](173) mgSystem data update. value: wifi_connect
+[   45.585900] [CPU0] [49] [a7] [INFO] [AWTK] [11:31:36.301][INFO][dreUI_homePageUpdateWifi](55) WiFi updata: ssid=Xiaomi_E5A6_5G, status=Connected, rssi=-55, loginStatus=0, set wifiicon=Bi
+[   46.146716] [10] [NOTICE] [ap] wifi_rf_temperature_compensation L682 0x1A8: 0x0001
+[   46.329840] [13] [NOTICE] [ap] bh:rx(id=0) len=76 stat=0 [ARP REQ] [50:4f:3b:73:b0:fa->ff:ff:ff:ff:ff:ff BSSID=(50:4f:3b:73:b0:fc)]
+
+[   47.350954] [13] [NOTICE] [ap] bh:rx(id=0) len=76 stat=0 [ARP REQ] [50:4f:3b:73:b0:fa->ff:ff:ff:ff:ff:ff BSSID=(50:4f:3b:73:b0:fc)]
+
+[   47.687005] [23] [ ERROR] [ap] dump:device manager[no connected device]
+
+[   48.381462] [13] [NOTICE] [ap] bh:rx(id=0) len=76 stat=0 [ARP REQ] [50:4f:3b:73:b0:fa->ff:ff:ff:ff:ff:ff BSSID=(50:4f:3b:73:b0:fc)]
+
+[   48.573823] [10] [NOTICE] [ap] wifi_rf_temperature_compensation L682 0x1A8: 0x0001
+[   49.096103] [117] [  INFO] [ap] [gateway W][deviceTree_db_setDeviceProperty:71] DB_setDeviceProperty property={"visibility":1} ret:0
+[   49.099208] [117] [  WARN] [ap] [gateway W][dm_busManager_reportProp:1180] (serial:548524492)---{"reqId":"DneCcqto2BM53Y95TZ9XR8ll8gPSQcb","sourceType":"device","sourceId":"05a293543d83100b","reportAll":false,"deviceProps":[{"deviceId":"bc7765e805a14b18c7431000zb3","uid":"05a293543d83100b","deviceType":"relay","online":1,"properties":{"onoff":"off"}}]}
+[   49.104176] [108] [  INFO] [ap] [gateway W][__copyDevice:552] get device info -> id:9bfa649005a14b18c7431000zb240 , name:智能开关Air三开 , hpid:000001000B 
+[   49.110386] [108] [  INFO] [ap] [gateway W][msg_route_Report:389] name(dOnlineOffline), msg->jsValue({})
+[   49.111551] [108] [  INFO] [ap] [gateway W][ds_deviceTree_getByNodeEndpoint:613] engineType:1 , nodeId:0x0b4a , endpoint:240 
+[   49.114267] [117] [  INFO] [ap] [gateway W][dmMessage_destory:60] serial:548524492, msg:0x34210130, msg->device:0x342094d8
+[   49.115665] [108] [  INFO] [ap] [gateway W][__copyDevice:552] get device info -> id:9bfa649005a14b18c7431000zb240 , name:智能开关Air三开 , hpid:000001000B 
+[   49.118149] [108] [  INFO] [ap] lightControl index: 
+[   49.118615] [108] [  INFO] [ap] 00 
+[   49.119080] [108] [  INFO] [ap] 01 
+[   49.119624] [108] [  INFO] [ap] 02 
+[   49.120090] [108] [  INFO] [ap] 03 
+[   49.120478] [108] [  INFO] [ap] 04 
+[   49.120943] [108] [  INFO] [ap] 05 
+[   49.121409] [108] [  INFO] [ap] 06 
+[   49.121875] [108] [  INFO] [ap] 07 
+[   49.122574] [108] [  INFO] [ap] 08 
+[   49.122884] [108] [  INFO] [ap] 09 
+[   49.123350] [108] [  INFO] [ap] 10 
+[   49.123816] [108] [  INFO] [ap] 11 
+[   49.124204] [108] [  INFO] [ap] 12 
+[   49.124670] [108] [  INFO] [ap] 
+lightControl value: 
+[   49.125291] [108] [  INFO] [ap] 02 
+[   49.125756] [108] [  INFO] [ap] 80 
+[   49.126222] [108] [  INFO] [ap] 09 
+[   49.126688] [108] [  INFO] [ap] 00 
+[   49.127076] [108] [  INFO] [ap] 08 
+[   49.127542] [108] [  INFO] [ap] 1e 
+[   49.128008] [108] [  INFO] [ap] 1f 
+[   49.128396] [108] [  INFO] [ap] 0b 
+[   49.128861] [108] [  INFO] [ap] 04 
+[   49.129327] [108] [  INFO] [ap] 1a 
+[   49.129793] [108] [  INFO] [ap] 03 
+[   49.130181] [108] [  INFO] [ap] ea 
+[   49.130647] [108] [  INFO] [ap] 07 
+[   49.131113] [108] [  INFO] [ap] 
+[   49.131501] [108] [ ERROR] [ap] [gateway W][_clientZigbee_lightControl_reportAttr:936] report attr error
+[   49.132665] [117] [  INFO] [ap] [gateway W][dmMessage_destory:60] serial:2019446259, msg:0x3422d3f8, msg->device:0x34218d40
+[   49.140273] [117] [  INFO] [ap] [gateway W][_dm_msgFunc_reportProp:236] serial:386801988,device:0x3422cb18
+[   49.141437] [117] [  INFO] [ap] reportProp[srcId:f5940c2605a14ae4b1c31018zb1, name:reportProp]:
+[   49.142602] [117] [  INFO] [ap] {"onoff":"off"}
+[   49.143067] [117] [  INFO] [ap] [gateway W][ds_deviceTree_getByDeviceId:588] to get deviceId(f5940c2605a14ae4b1c31018zb1)
+[   49.144387] [117] [  INFO] [ap] [gateway W][__copyDevice:552] get device info -> id:f5940c2605a14ae4b1c31018zb1 , name:左键 , hpid:000001000A 
+[   49.146172] [117] [  INFO] [ap] report filter start:
+[   49.146638] [117] [  INFO] [ap] {"onoff":"off"}
+[   49.147259] [117] [  INFO] [ap] report filter end:
+[   49.147803] [117] [  INFO] [ap] {"onoff":"off"}
+[   49.148424] [117] [  INFO] [ap] clamp range start:
+[   49.149045] [117] [  INFO] [ap] {"onoff":"off"}
+[   49.149588] [117] [  INFO] [ap] clamp range end:
+[   49.150131] [117] [  INFO] [ap] {"onoff":"off"}
+[   49.151063] [117] [  INFO] [ap] [gateway W][deviceTree_db_saveDeviceInfo:242] no need update db
+[   49.151995] [117] [  INFO] [ap] [gateway W][deviceTree_db_saveDeviceInfo:245] device:f5940c2605a14ae4b1c31018zb1 , version:0.1.0  ret = 0 s
+[   49.153702] [117] [  INFO] [ap] [gateway W][deviceTree_db_saveDeviceProperty:80] start deviceId:f5940c2605a14ae4b1c31018zb1
+[   49.155177] [117] [  INFO] [ap] [gateway W][datatable_table_set:128] xx
+[   49.168600] [CPU0] [149] [a7] [INFO] [AWTK] [11:31:39.884][INFO][dreUI_msgServerRecvBus](459) recv bus msg, cmd: reportProp, serial 293091, value <{"reqId":"DneCcqto2BM53Y95TZ9XR8ll8gPSQcb","sourceType":"device","sourceId":"05a293543d83100b","reportAll":false,"deviceProps":[{"deviceId":"bc7765e805a14b18c7431000zb3","uid":"05a293543d83100b","deviceType":"relay","online":1,"properties":{"onoff":"off"}}]}>
+
+[   49.179400] [CPU0] [49] [a7] [ERROR] [AWTK] [11:31:39.895][ERROR][dreUI_mgDevice_msgReportProp](549) nofind deviceId:bc7765e805a14b18c7431000zb3
+[   49.273404] [13] [NOTICE] [ap] bh:tx(id=0) len=110 stat=0 [DNS] [00:80:43:00:00:21->50:4f:3b:73:b0:fa BSSID=(50:4f:3b:73:b0:fc)]
+
+[   49.299332] [13] [NOTICE] [ap] bh:rx(id=0) len=126 stat=0 [DNS] [50:4f:3b:73:b0:fa->00:80:43:00:00:21 BSSID=(50:4f:3b:73:b0:fc)]
+
+[   49.338767] [ 8] [ ALERT] [ap] dump_assert_info: Current Version: NuttX DreamePad003 12.6.0 54f1cb0d0f Mar 26 2026 11:14:09 arm
+[   49.338844] [ 8] [ ALERT] [ap] dump_assert_info: Assertion failed panic: at file: /home/xl/dreame/RTOS/001/dreame_rtos_4inch_project/WB100-SDK/rtos/nuttx/arch/arm/src/board/src/bes_global_shmem.h:101 task: audio_flinger process: bes_cmsis_wrapper 0xc1a6ef5
+[   49.338922] [ 8] [ ALERT] [ap] up_dump_register: R0: 3408fed0 R1: 00000065 R2: 2c522938  R3: 00000007
+[   49.339000] [ 8] [ ALERT] [ap] up_dump_register: R4: 00000000 R5: 3410c8d8 R6: 00000000  FP: 2000b0a0
+[   49.344278] [ 8] [ ALERT] [ap] up_dump_register: R8: 2c522938 SB: 2c525f38 SL: 2000b5f8 R11: 00000065
+[   49.344356] [ 8] [ ALERT] [ap] up_dump_register: IP: 00000000 SP: 2000b088 LR: 0c28c35d  PC: 0c28c35d
+[   49.344356] [ 8] [ ALERT] [ap] up_dump_register: xPSR: 60000040 BASEPRI: 00000000 CONTROL: 0000000c
+[   49.344434] [ 8] [ ALERT] [ap] up_dump_register: EXC_RETURN: 00000000
+[   49.344511] [ 8] [ ALERT] [ap] dump_stackinfo: IRQ Stack:
+[   49.349712] [ 8] [ ALERT] [ap] dump_stackinfo:   base: 0x2000aa48
+[   49.349790] [ 8] [ ALERT] [ap] dump_stackinfo:   size: 00002048
+[   49.349790] [ 8] [ ALERT] [ap] dump_stackinfo:     sp: 0x2000b088
+[   49.349868] [ 8] [ ALERT] [ap] stack_dump: 0x2000b068: 0c28c35d 2c59ce24 2000aa48 3410c8d8 20044100 2000b0a0 2000b088 0c28c45f
+[   49.354137] [ 8] [ ALERT] [ap] stack_dump: 0x2000b088: 00000460 00000065 3410c9a4 3410912c 0c1a6ef5 00000000 2000b100 00001fe0
+[   49.355534] [ 8] [ ALERT] [ap] stack_dump: 0x2000b0a8: 00000000 00000006 2000b0d8 3410c8d8 3408fed0 2c522938 2c525f38 00000065
+[   49.357009] [ 8] [ ALERT] [ap] stack_dump: 0x2000b0c8: 7474754e 00000058 00000080 0c1a662b 00000000 65724400 50656d61 30306461
+[   49.358407] [ 8] [ ALERT] [ap] stack_dump: 0x2000b0e8: 340b0033 2c59ce24 00000000 340ff5f0 0c29fb71 2e323100 00302e36 71971c10
+[   49.359804] [ 8] [ ALERT] [ap] stack_dump: 0x2000b108: 00000080 00000000 34355ef4 62633166 66306430 72614d20 20363220 36323032
+[   49.361279] [ 8] [ ALERT] [ap] stack_dump: 0x2000b128: 3a313120 303a3431 20000039 2c59ce24 00000000 0c2b8e69 2000b150 6d72610f
+[   49.362676] [ 8] [ ALERT] [ap] stack_dump: 0x2000b148: 00000000 02f0d941 2000b1c8 02f0d941 2000b1d0 2c59ce24 2000b188 00000000
+[   49.364151] [ 8] [ ALERT] [ap] stack_dump: 0x2000b168: 58004000 00000000 2000b188 3408e910 3408e900 00000000 3408e930 0c2a3d57
+[   49.365548] [ 8] [ ALERT] [ap] stack_dump: 0x2000b188: 3410c8d8 2c59ce24 2000b198 0c2bde57 2000b668 2000b1b0 2000b67c 2c59ce24
+[   49.366946] [ 8] [ ALERT] [ap] stack_dump: 0x2000b1a8: 00000001 58004000 00000800 0c286a41 2000b1c0 0c2b8df9 2000b1c8 2c59ce24
+[   49.368421] [ 8] [ ALERT] [ap] stack_dump: 0x2000b1c8: 2000b1d0 0c29fe89 00000031 0000ffff 00000010 00000000 00000000 2000b66c
+[   49.369818] [ 8] [ ALERT] [ap] stack_dump: 0x2000b1e8: 3410c8d8 2000b668 2000b210 2000b67c 3410c8c8 00000000 20045ef4 0c1a835b
+[   49.371215] [ 8] [ ALERT] [ap] stack_dump: 0x2000b208: 0c1a8355 00207f99 2000b218 2c59ce24 00000040 20045ef4 2000b228 0c2c07c7
+[   49.372690] [ 8] [ ALERT] [ap] stack_dump: 0x2000b228: deadbeef 2c59ce24 00000002 00000008 ffffffff 20045fd0 00000000 0c2b79c7
+[   49.374087] [ 8] [ ALERT] [ap] stack_dump: 0x2000b248: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   49.375562] [ 8] [ ALERT] [ap] dump_stackinfo: User Stack:
+[   49.375562] [ 8] [ ALERT] [ap] dump_stackinfo:   base: 0x20044100
+[   49.375640] [ 8] [ ALERT] [ap] dump_stackinfo:   size: 00008160
+[   49.375640] [ 8] [ ALERT] [ap] dump_stackinfo:     sp: 0x20045fd0
+[   49.375718] [ 8] [ ALERT] [ap] stack_dump: 0x20045fb0: 00000000 00000000 00000000 00000000 3f000000 00003252 00000010 0021eabf
+[   49.379987] [ 8] [ ALERT] [ap] stack_dump: 0x20045fd0: 00000000 00000000 00000002 00000008 12000001 00000000 00000000 2c59ce24
+[   49.381384] [ 8] [ ALERT] [ap] stack_dump: 0x20045ff0: 00000000 00000000 20046074 ffffffff 20046010 3410c8a0 ffffffff 0021eb0d
+[   49.382859] [ 8] [ ALERT] [ap] stack_dump: 0x20046010: 02f08b53 2c59ce24 00000001 00000000 00000008 0c1a6fd5 02f08b53 00000000
+[   49.384257] [ 8] [ ALERT] [ap] stack_dump: 0x20046030: ffffffff 20046074 00000000 341494f8 00000001 00000000 0000000a 00000780
+[   49.385654] [ 8] [ ALERT] [ap] stack_dump: 0x20046050: 00000001 0c1a7375 2004c544 0c1f11eb 00000008 2c59ce24 00000002 00000001
+[   49.387129] [ 8] [ ALERT] [ap] stack_dump: 0x20046070: 20046098 00000000 00000000 00000000 00000000 3410c8a0 00000000 00000000
+[   49.388526] [ 8] [ ALERT] [ap] stack_dump: 0x20046090: 200460b8 00000000 00000000 00000000 00000000 0c1a6f47 00000000 3410c8d8
+[   49.389923] [ 8] [ ALERT] [ap] stack_dump: 0x200460b0: 00000000 0c2aa8b5 00000000 2c59ce24 200460c8 0c28d6cb 00000000 2c59ce24
+[   49.391398] [ 8] [ ALERT] [ap] stack_dump: 0x200460d0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+[   49.393106] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c2c0352 0x0c28f9de 0x0c2ab32c 0x0c28c4a2 0x0c2a3d54 0x0c2bde54 0x0c286a3e 0x0c1a8358
+[   49.393261] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x00207f96 0x0c2c07c4 0x0021ea3e 0x0021eabc 0x0021eb0a 0x0c1a6fd2 0x0c1a7372 0x0c1f11e8
+[   49.393417] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c1f11e8 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.397841] [ 8] [ ALERT] [ap] dump_tasks:    PID GROUP PRI POLICY   TYPE    NPX STATE   EVENT      SIGMASK          STACKBASE  STACKSIZE      USED   FILLED       CPU   COMMAND
+[   49.397841] [ 8] [ ALERT] [ap] dump_tasks:   ----   --- --- -------- ------- --- ------- ---------- ---------------- 0x2000aa48      2048      1212    59.1%      ----   irq
+[   49.397997] [ 8] [ ALERT] [ap] dump_task:       0     0   0 FIFO     Kthread -   Ready              0000000000000000 0x200ec420      3040      1244    40.9%      0.3%   Idle_Task
+[   49.403819] [ 8] [ ALERT] [ap] dump_task:       1     0 224 RR       Kthread -   Waiting Semaphore  0000000000000000 0x34103e10      4016       436    10.8%      0.0%   hpwork 0x3400adc4 0x3400ade8
+[   49.406070] [ 8] [ ALERT] [ap] dump_task:       2     0 100 RR       Kthread -   Waiting Semaphore  0000000000000000 0x34104f10      4016       540    13.4%      0.0%   lpwork 0x3400ad8c 0x3400adb0
+[   49.408244] [ 8] [ ALERT] [ap] dump_task:       5     5 255 RR       Task    -   Waiting Signal     0000000000000000 0x34109588      4032      1260    31.2%      0.0%   bes_cmsis_wrapper
+[   49.410262] [ 8] [ ALERT] [ap] dump_task:       6     0 224 RR       Kthread -   Waiting Semaphore  0000000000000000 0x3410b370      4024      2100    52.1%      8.6%   rptun audio 0x3410b038
+[   49.412435] [ 8] [ ALERT] [ap] dump_task:       7     5 101 RR       pthread -   Waiting Semaphore  8000000000000000 0x3408eaf8      4064      1508    37.1%      0.0%   bes_main 0xc1a6ef5 0x3410c700
+[   49.414687] [ 8] [ ALERT] [ap] dump_task:       8     5 253 RR       pthread -   Running            8000000000000000 0x20044100      8160       780     9.5%      6.1%   audio_flinger 0xc1a6ef5 0x3410c8a0
+[   49.416938] [ 8] [ ALERT] [ap] dump_task:       9     5 101 RR       pthread -   Waiting MQ empty   8000000000000000 0x3410d2b8      4064      1132    27.8%      0.0%   wifi_event 0xc1a6ef5 0x3410d160
+[   49.419111] [ 8] [ ALERT] [ap] dump_task:      10     5 101 RR       pthread -   Waiting Signal     8000000000000000 0x3410e688      4064      1212    29.8%      0.2%   temperature 0xc1a6ef5 0x3410e530
+[   49.421440] [ 8] [ ALERT] [ap] dump_task:      11     5 252 RR       pthread -   Waiting MQ empty   8000000000000000 0x20048100     10208      2692    26.3%      0.0%   net_wq 0xc1a6ef5 0x3410f670
+[   49.423614] [ 8] [ ALERT] [ap] dump_task:      12     5 252 RR       pthread -   Waiting MQ empty   8000000000000000 0x20046100      8160      1844    22.5%      0.0%   net_tasklet 0xc1a6ef5 0x341108e8
+[   49.425865] [ 8] [ ALERT] [ap] dump_task:      13     5 252 RR       pthread -   Waiting Semaphore  8000000000000000 0x2004a900      6112      1844    30.1%      0.5%   cw1200_bh 0xc1a6ef5 0x341118f0
+[   49.428039] [ 8] [ ALERT] [ap] dump_task:      14     5 100 RR       pthread -   Waiting MQ empty   8000000000000000 0x341129b8      4064      1172    28.8%      0.0%   net_mgmt 0xc1a6ef5 0x34112860
+[   49.430212] [ 8] [ ALERT] [ap] dump_task:      15     5 253 RR       pthread -   Waiting MQ empty   8000000000000000 0x340e1f24      4060      2204    54.2%      0.1%   bes_netdev_wq 0x21c7f9 0
+[   49.432386] [ 8] [ ALERT] [ap] dump_task:      16     5 224 RR       pthread -   Waiting Semaphore  8000000000000000 0x340e0f24      4060       648    15.9%      0.0%   bes_ioctl_work 0x21bb89 0x340e0ef0
+[   49.434637] [ 8] [ ALERT] [ap] dump_task:      17    17 255 RR       Task    -   Waiting Semaphore  0000000000000000 0x34114360      4040      2756    68.2%      0.0%   nsh_main
+[   49.436578] [ 8] [ ALERT] [ap] dump_task:      20    20 100 RR       Task    -   Waiting Semaphore  0000000000000000 0x34117d28      4048      1772    43.7%      0.0%   kvdbd
+[   49.438596] [ 8] [ ALERT] [ap] dump_task:      21    21 103 RR       Task    -   Waiting Semaphore  8000000000000000 0x34119b50      8136      3244    39.8%      0.0%   bluetoothd
+[   49.440537] [ 8] [ ALERT] [ap] dump_task:      22    21 255 RR       pthread -   Waiting Signal     0000000000000000 0x34061430      4064       932    22.9%      0.0%   cmsis_timer 0xc1a6ef5 0x3411d4c8
+[   49.442788] [ 8] [ ALERT] [ap] dump_task:      23    21 223 RR       pthread -   Waiting MQ empty   8000000000000000 0x3411d720      4064      2988    73.5%      0.0%   bt_stack_thread 0xc1a6ef5 0x3411d3d0
+[   49.445039] [ 8] [ ALERT] [ap] dump_task:      35    35 100 RR       Task    -   Waiting Semaphore  0000000000000000 0x34121358      4048      2332    57.6%      0.0%   adbd
+[   49.447057] [ 8] [ ALERT] [ap] dump_task:     165   165 100 RR       Task    -   Waiting Semaphore  0000000000000000 0x3418a3a8      4040       348     8.6%      0.0%   event_handle
+[   49.448998] [ 8] [ ALERT] [ap] dump_task:      51    51 100 RR       Task    -   Waiting Signal     0000000000000000 0x34142d98      4040      2100    51.9%      0.0%   dre_log_server
+[   49.451172] [ 8] [ ALERT] [ap] dump_task:     183   183 100 RR       Task    -   Waiting Signal     0000000000000000 0x341b7f60     12240      3700    30.2%      0.0%   ota
+[   49.453112] [ 8] [ ALERT] [ap] dump_task:      56    51 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34122350      8160      1428    17.5%      0.0%   env_task 0xc3abbd5 0x341426b8
+[   49.455286] [ 8] [ ALERT] [ap] dump_task:      57    51 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34124358      4064      1044    25.6%      0.0%   log_writer 0xc3abbd5 0x34142700
+[   49.457615] [ 8] [ ALERT] [ap] dump_task:      58    51 100 RR       pthread -   Ready              0000000000000000 0x34127b50     12256       884     7.2%      0.1%   env_rpmsg_client 0xc3abbd5 0x3413f570
+[   49.459866] [ 8] [ ALERT] [ap] dump_task:      59    59 100 RR       Task    -   Waiting Signal     0000000000000000 0x3412be70      3992      2820    70.6%      0.0%   system_ctrl
+[   49.461962] [ 8] [ ALERT] [ap] dump_task:      60    51 100 RR       pthread -   Waiting Signal     0000000000000000 0x34131020     10208      6428    62.9%     17.7%   LogDumpMonitorThread 0xc3abbd5 0x341309d0
+[   49.464291] [ 8] [ ALERT] [ap] dump_task:      61    59 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34135868      6112      2900    47.4%      0.0%   MsgDispatcher 0xc3abbd5 0x3412e020
+[   49.466620] [ 8] [ ALERT] [ap] dump_task:      62    59 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34137070     12256      1692    13.8%      0.0%   system_ctrl_cmd 0xc3abbd5 0x3412d888
+[   49.468871] [ 8] [ ALERT] [ap] dump_task:      63    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x3413a078      6088      1436    23.5%      0.0%   system_ctrl_cmd 0xc3abbd5 0x3412de38
+[   49.471355] [ 8] [ ALERT] [ap] dump_task:     195   183 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x3419ef48     16352      1372     8.3%      0.0%   OtaMsgDispatche 0xc3abbd5 0x341304f0
+[   49.473684] [ 8] [ ALERT] [ap] dump_task:     196   183 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x341a2f50     12256      4076    33.2%      0.2%   ota_cmd_recv 0xc3abbd5 0x3417adf0
+[   49.476090] [ 8] [ ALERT] [ap] dump_task:      82    51 100 RR       pthread -   Waiting Signal     0000000000000000 0x34143d88     16352       980     5.9%      0.0%   LogUploadMonitorThread 0xc3abbd5 0x3412ad98
+[   49.478419] [ 8] [ ALERT] [ap] dump_task:      83    51 100 RR       pthread -   Waiting Signal     0000000000000000 0x34147d90      4064      1044    25.6%      0.0%   dre_log_server 0xc3a1e81 0
+[   49.480593] [ 8] [ ALERT] [ap] dump_task:      88    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x34149ca0      4064      2380    58.5%      0.0%   system_ctrl 0xc3b4a9d 0
+[   49.482766] [ 8] [ ALERT] [ap] dump_task:      89    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x3414e918      6112      2068    33.8%      0.0%   wifi_monitor 0xc3abbd5 0x3413e228
+[   49.485017] [ 8] [ ALERT] [ap] dump_task:      90    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x34150220      6112      1812    29.6%      0.0%   wifi_bus_mon 0xc3abbd5 0x3412f2a0
+[   49.487269] [ 8] [ ALERT] [ap] dump_task:      91    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x34151b28      6112      1068    17.4%      0.0%   wifi_ui_svc 0xc3abbd5 0x34130ef0
+[   49.490374] [ 8] [ ALERT] [ap] dump_task:      92    92 100 RR       Task    -   Waiting Signal     0000000000000000 0x3415b658     49096       468     0.9%      0.0%   devicemanager
+[   49.492392] [ 8] [ ALERT] [ap] dump_task:      94    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34167e58      4064      1596    39.2%      0.0%   main_loop 0xc399955 0x3412fbe0
+[   49.494721] [ 8] [ ALERT] [ap] dump_task:      95    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34168e60     12256      1572    12.8%      0.0%   gateway_cmd_rec 0xc3abbd5 0x3412f468
+[   49.496972] [ 8] [ ALERT] [ap] dump_task:      96    92 100 RR       pthread -   Waiting Signal     0000000000000000 0x3416be68      6088      1364    22.4%      0.0%   gateway_cmd_che 0xc3abbd5 0x3412f2d0
+[   49.499378] [ 8] [ ALERT] [ap] dump_task:      97    59 100 RR       pthread -   Ready              0000000000000000 0x34173ee8     12256       892     7.2%      0.2%   system_ctrl_rpmsg_client 0xc3abbd5 0x3412dbf8
+[   49.501863] [ 8] [ ALERT] [ap] dump_task:      98    92 100 RR       pthread -   Ready              0000000000000000 0x34176ef0     12256      1252    10.2%      0.2%   gateway_rpmsg_client 0xc3abbd5 0x341305d8
+[   49.504191] [ 8] [ ALERT] [ap] dump_task:     228   183 100 RR       pthread -   Waiting Signal     0000000000000000 0x3418bb38      6088      1340    22.0%      0.0%   ota_cmd_check 0xc3abbd5 0x3417ae18
+[   49.506365] [ 8] [ ALERT] [ap] dump_task:     102    59 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x3417b3e0      4064      2460    60.5%      0.0%   system_ctrl 0xc3be239 0
+[   49.508694] [ 8] [ ALERT] [ap] dump_task:     231   183 100 RR       pthread -   Ready              0000000000000000 0x341a5f58     12256       884     7.2%      0.2%   ota_rpmsg_client 0xc3abbd5 0x341720e8
+[   49.511023] [ 8] [ ALERT] [ap] dump_task:     104    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x3417f790      8160      1196    14.6%      0.0%   auto_brightness 0xc3b416d 0
+[   49.513119] [ 8] [ ALERT] [ap] dump_task:     105    59 100 RR       pthread -   Waiting Signal     0000000000000000 0x3417c3e8      4064      1492    36.7%      0.0%   system_ctrl 0xc3b58f9 0
+[   49.515292] [ 8] [ ALERT] [ap] dump_task:     106    59 100 RR       pthread -   Ready              0000000000000000 0x3415a4d8      4064      1084    26.6%      0.0%   power_key 0xc3abbd5 0x3412cee8
+[   49.517543] [ 8] [ ALERT] [ap] dump_task:     107    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x3417dc00      4064       428    10.5%      0.0%   main_loop 0xc399955 0x341302a8
+[   49.519717] [ 8] [ ALERT] [ap] dump_task:     108    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34181798      4064      2188    53.8%      1.7%   zm_host_main_lo 0xc3abbd5 0x3412dd00
+[   49.522046] [ 8] [ ALERT] [ap] dump_task:     109    92 100 RR       pthread -   Waiting Signal     0000000000000000 0x341827a0      6112      1380    22.5%      0.0%   zm_bzsp_rx_main 0xc3abbd5 0x341306c0
+[   49.524297] [ 8] [ ALERT] [ap] dump_task:     110    92 100 RR       pthread -   Waiting Signal     0000000000000000 0x34183fa8      4064      1300    31.9%      0.0%   zm_bzsp_tx_main 0xc3abbd5 0x3412be00
+[   49.526548] [ 8] [ ALERT] [ap] dump_task:     111    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x3417ec08      2016       916    45.4%      0.0%   zm_bzsp_uart_ma 0xc3abbd5 0x34130b00
+[   49.528799] [ 8] [ ALERT] [ap] dump_task:     112    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34184fb0      4064      1640    40.3%      0.0%   zm_ncp_event_lo 0xc3abbd5 0x3412ac88
+[   49.531128] [ 8] [ ALERT] [ap] dump_task:     113    92 100 RR       pthread -   Waiting Semaphore  0000000000000000 0x34185fb8      4064      1836    45.1%      0.0%   main_loop 0xc37b639 0
+[   49.533224] [ 8] [ ALERT] [ap] dump_task:     114    92 100 RR       pthread -   Ready              0000000000000000 0x34186fc0      4064       532    13.0%      0.1%   main_loop 0xc369245 0
+[   49.535475] [ 8] [ ALERT] [ap] dump_task:     116    92 100 RR       pthread -   Ready              0000000000000000 0x3418e1a0     10208       924     9.0%      0.2%   manager_generat 0xc3abbd5 0x3412abf0
+[   49.537804] [ 8] [ ALERT] [ap] dump_task:     117    92 100 RR       pthread -   Ready              0000000000000000 0x34190e98     10208      2796    27.3%     62.7%   manager_device 0xc3abbd5 0x34153d60
+[   49.539978] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 0: 0x0c2bdb28 0x0c28bdd6 0x0c28a58e
+[   49.540133] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 1: 0x0021dc98 0x0c28e3f6 0x0021dce6 0x0c293532 0x0c2919aa
+[   49.540211] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 2: 0x0021dc98 0x0c28e3f6 0x0021dce6 0x0c293532 0x0c2919aa
+[   49.540366] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 5: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b5a66 0x0c28a5bc 0x0c2ab3d6 0x0c2919c6
+[   49.540444] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 6: 0x0021dc98 0x0c28e3f6 0x0021dce6 0x00236c48 0x0c2919aa
+[   49.545722] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 7: 0x0021dc98 0x0c28e3f6 0x0021dce6 0x0021eab2 0x0021eb0a 0x0c1a6fd2 0x0c1a73a6 0x0c28a3a0
+[   49.545800] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 7: 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.545955] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c2c0352 0x0c28f9de 0x0c2ab32c 0x0c28c144 0x0c28ebce 0x0c28c510 0x0c2a3d54 0x0c2bde54
+[   49.551311] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c286a3e 0x0c1a8358 0x00207f96 0x0c2c07c4 0x0021ea3e 0x0021eabc 0x0021eb0a 0x0c1a6fd2
+[   49.551544] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c1a6fd2 0x0c1a7372 0x0c1f11e8 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.551700] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 9: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d1d2 0x0c1a7c9e 0x0c26993c 0x0c1a6f44 0x0c2aa8b2
+[   49.551700] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 9: 0x0c28d6c8
+[   49.556823] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|10: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b5b66 0x0c1a7180 0x0c27283e 0x0c1a6f44 0x0c2aa8b2
+[   49.556823] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|10: 0x0c28d6c8
+[   49.556978] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|11: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d1d2 0x0c1a7c9e 0x00237908 0x0c1a6f44 0x0c2aa8b2
+[   49.557056] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|11: 0x0c28d6c8
+[   49.562024] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|12: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d1d2 0x0c1a7a38 0x002376c6 0x0c1a6f44 0x0c2aa8b2
+[   49.562102] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|12: 0x0c28d6c8
+[   49.562257] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|13: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021e7a0 0x0021e74e 0x0c1a76c2 0x0c1f260a 0x00242128
+[   49.562257] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|13: 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.567303] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|14: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d0de 0x0c1a79b4 0x0c1f35ea 0x0c1a6f44 0x0c2aa8b2
+[   49.567303] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|14: 0x0c28d6c8
+[   49.567458] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|15: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d1d2 0x0021c820 0x0c2aa8b2 0x0c28d6c8
+[   49.567613] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|16: 0x0021dc98 0x0c28e3f6 0x0021812e 0x00218182 0x0021bba8 0x0c2aa8b2 0x0c28d6c8
+[   49.572814] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|17: 0x0021dc98 0x0c28e3f6 0x0c29c536 0x0c3df1c2 0x0c3df264 0x0c3df29e 0x0c3df2ea 0x0c32d202
+[   49.572892] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|17: 0x0c32cf6a 0x0c32d2a2 0x0c2f6b28 0x0c2f0d34 0x0c31edc0 0x0c2ab3d6 0x0c2919c6
+[   49.573047] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|20: 0x0021dc98 0x0c28e3f6 0x0c3ddfc8 0x0c434020 0x0c2ab3d6 0x0c2919c6
+[   49.578481] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|21: 0x0021dc98 0x0c28e3f6 0x0c3dded0 0x0c321bbc 0x0c31f666 0x0c412a12 0x0c412b5c 0x0c4240d0
+[   49.578559] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|21: 0x0c2ab3d6 0x0c2919c6
+[   49.578714] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|22: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b5a66 0x0c1a69f8 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.578869] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|23: 0x0c28d3ae 0x0c28e3f6 0x0c28d088 0x0c28d1d2 0x0c1a7f5c 0x0c1e34ee 0x0c1e3534 0x0c1a6f44
+[   49.583760] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|23: 0x0c2aa8b2 0x0c28d6c8
+[   49.583915] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|35: 0x0021dc98 0x0c28e3f6 0x0c3dded0 0x0c321bbc 0x0c31f666 0x0c2f932e 0x0c2f80b6 0x0c2ab3d6
+[   49.583993] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|35: 0x0c2919c6
+[   49.584148] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|165: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3b011c 0x0c2ab3d6 0x0c2919c6
+[   49.589271] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|51: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c3a220a 0x0c2ab3d6 0x0c2919c6
+[   49.589427] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|183: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c37791e 0x0c37333c 0x0c2ab3d6
+[   49.589427] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|183: 0x0c2919c6
+[   49.594938] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|56: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c3aad64
+[   49.595016] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|56: 0x0c35d91e 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.595171] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|57: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3a0e50 0x0c3abbf6
+[   49.595249] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|57: 0x0c2aa8b2 0x0c28d6c8
+[   49.600605] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|58: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c35ee18 0x0c3abbf6 0x0c2aa8b2
+[   49.600683] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|58: 0x0c28d6c8
+[   49.600838] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|59: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c3c6e16 0x0c2ab3d6 0x0c2919c6
+[   49.600916] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|60: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3a5a82 0x0c3abbf6 0x0c2aa8b2
+[   49.605961] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|60: 0x0c28d6c8
+[   49.606117] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|61: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c3aad64
+[   49.606194] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|61: 0x0c3c8fd6 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.606349] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|62: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3abece 0x0c3aad64 0x0c35ae38 0x0c35c26a 0x0c3abbf6
+[   49.611628] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|62: 0x0c2aa8b2 0x0c28d6c8
+[   49.611783] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|63: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c35ba0e 0x0c3abbf6 0x0c2aa8b2
+[   49.611783] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|63: 0x0c28d6c8
+[   49.612016] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|195: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c3aad64
+[   49.617062] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|195: 0x0c37696a 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.617217] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|196: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3abece 0x0c3aad64 0x0c35ae38 0x0c35c26a 0x0c3abbf6
+[   49.617217] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|196: 0x0c2aa8b2 0x0c28d6c8
+[   49.617373] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|82: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c3a711c 0x0c3abbf6 0x0c2aa8b2
+[   49.622807] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|82: 0x0c28d6c8
+[   49.622962] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|83: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c3a1eb8 0x0c2aa8b2 0x0c28d6c8
+[   49.623117] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|88: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3b4b66 0x0c2aa8b2 0x0c28d6c8
+[   49.623272] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|89: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3c0214 0x0c3abbf6 0x0c2aa8b2
+[   49.628318] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|89: 0x0c28d6c8
+[   49.628473] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|90: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3b89ba 0x0c3abbf6 0x0c2aa8b2
+[   49.628473] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|90: 0x0c28d6c8
+[   49.628629] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|91: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3c08e4 0x0c3abbf6 0x0c2aa8b2
+[   49.633519] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|91: 0x0c28d6c8
+[   49.633674] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|92: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c382c54 0x0c2ab3d6 0x0c2919c6
+[   49.633830] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|94: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3abece 0x0c3aad64 0x0c39997c 0x0c2aa8b2 0x0c28d6c8
+[   49.639341] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|95: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3abece 0x0c3aad64 0x0c35ae38 0x0c35c26a 0x0c3abbf6
+[   49.639419] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|95: 0x0c2aa8b2 0x0c28d6c8
+[   49.639574] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|96: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c35ba0e 0x0c3abbf6 0x0c2aa8b2
+[   49.639574] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|96: 0x0c28d6c8
+[   49.639729] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|97: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c35ee18 0x0c3abbf6 0x0c2aa8b2
+[   49.645086] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|97: 0x0c28d6c8
+[   49.645241] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|98: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c35ee18 0x0c3abbf6 0x0c2aa8b2
+[   49.645241] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|98: 0x0c28d6c8
+[   49.645396] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|228: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c35ba0e 0x0c3abbf6 0x0c2aa8b2
+[   49.650287] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|228: 0x0c28d6c8
+[   49.650442] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|102: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3be348 0x0c2aa8b2
+[   49.650520] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|102: 0x0c28d6c8
+[   49.650675] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|231: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c35ee18 0x0c3abbf6 0x0c2aa8b2
+[   49.655565] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|231: 0x0c28d6c8
+[   49.655721] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|104: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac072 0x0c3b4238 0x0c2aa8b2 0x0c28d6c8
+[   49.655876] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|105: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac102 0x0c3b5cd0 0x0c2aa8b2 0x0c28d6c8
+[   49.660766] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|106: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c3b55d4 0x0c3abbf6 0x0c2aa8b2
+[   49.660766] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|106: 0x0c28d6c8
+[   49.660922] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|107: 0x0021dc98 0x0c28e3f6 0x0021e6ca 0x0c3abece 0x0c3aad64 0x0c39997c 0x0c2aa8b2 0x0c28d6c8
+[   49.661077] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|108: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c39438c
+[   49.666200] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|108: 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.666356] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|109: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c38fdea 0x0c3abbf6 0x0c2aa8b2
+[   49.666433] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|109: 0x0c28d6c8
+[   49.666589] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|110: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b2922 0x0c3ac0c2 0x0c38fb9a 0x0c3abbf6 0x0c2aa8b2
+[   49.671712] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|110: 0x0c28d6c8
+[   49.671945] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|111: 0x0021dc98 0x0c28e3f6 0x0021de28 0x0c3deece 0x0c3df86a 0x0c36a824 0x0c36a536 0x0c36df66
+[   49.672022] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|111: 0x0c396bb2 0x0c38fee4 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.672178] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|112: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c3aad64
+[   49.677612] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|112: 0x0c39655c 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.677767] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|113: 0x0021dc98 0x0c28e3f6 0x0021de28 0x0c3ddf90 0x0c37b676 0x0c2aa8b2 0x0c28d6c8
+[   49.677922] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|114: 0x0c2902fe 0x0c28e3f6 0x0c29109a 0x0c2b5b66 0x0c36934e 0x0c2aa8b2 0x0c28d6c8
+[   49.683046] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|116: 0x0021dc98 0x0c28e3f6 0x0021df3a 0x0021dfce 0x0c28dddc 0x0c2aa876 0x0c3abf30 0x0c3aad64
+[   49.683123] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|116: 0x0c384f26 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.683356] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|117: 0x0c2bb036 0x002013c0 0x0c298166 0x0c2979f8 0x0c3e913c 0x0c3ebe7c 0x0c3ecd8c 0x0c3ed178
+[   49.683434] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|117: 0x0c3ed5d8 0x0c3edaac 0x0c3edcd4 0x0c3ee96a 0x0c3e9da4 0x0c3e05ea 0x0c3e0642 0x0c3ad2e6
+[   49.689023] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|117: 0x0c3afc44 0x0c3afcaa 0x0c3ae5f4 0x0c3ae894 0x0c3acdd6 0x0c39a744 0x0c3820fe 0x0c37eb8c
+[   49.689101] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace|117: 0x0c37ece6 0x0c3819b0 0x0c38311e 0x0c3839fa 0x0c383a70 0x0c3abbf6 0x0c2aa8b2 0x0c28d6c8
+[   49.694224] [ 8] [ EMERG] [ap] reset mode:2
+[   49.694224] [ 8] [ EMERG] [ap] Dump board_reset backtrace:
+[   49.694457] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c2c0352 0x0c28f9de 0x0c2ab32c 0x0c2b99d2 0x0c28c530 0x0c2a3d54 0x0c2bde54 0x0c286a3e
+[   49.694535] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c1a8358 0x00207f96 0x0c2c07c4 0x0021ea3e 0x0021eabc 0x0021eb0a 0x0c1a6fd2 0x0c1a7372
+[   49.694690] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c1a7372 0x0c1f11e8 0x0c1a6f44 0x0c2aa8b2 0x0c28d6c8
+[   49.699813] [ 8] [ EMERG] [ap] Version: NuttX DreamePad003 12.6.0 54f1cb0d0f Mar 26 2026 11:14:09 arm
+[   49.699968] [ 8] [ EMERG] [ap] Time: Thu Mar 26 03:31:40 2026
+
+[   49.699968] [ 8] [ ALERT] [ap] board_reset: ap force panic audio ...
+[   50.699270] [ 8] [  INFO] [ap] ched_dumpstack: backtrace|57: 0x34327756 0x38015fe8
+[   49.393400] [CPU1] [103] [a7] sched_dumpstack: backtrace|58: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343af252 0x343d2426 0x34327756
+[   49.393400] [CPU1] [103] [a7] sched_dumpstack: backtrace|58: 0x38015fe8
+[   49.393500] [CPU1] [103] [a7] sched_dumpstack: backtrace|59: 0x38015bcc 0x3802c766 0x38015938 0x380159ce 0x38015a18 0x38015a56 0x343fad96 0x34327756
+[   49.393500] [CPU1] [103] [a7] sched_dumpstack: backtrace|59: 0x38015fe8
+[   49.393600] [CPU
+[   50.704704] [ 8] [  INFO] [ap] 1] [103] [a7] sched_dumpstack: backtrace|83: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343fb3ae 0x343f94fa 0x343d3d2e 0x343d3dd6
+[   49.393600] [CPU1] [103] [a7] sched_dumpstack: backtrace|83: 0x343d2426 0x34327756 0x38015fe8
+[   49.393600] [CPU1] [103] [a7] sched_dumpstack: backtrace|84: 0x380193fc 0x3802c766 0x34328132 0x343d3652 0x343d2426 0x34327756 0x38015fe8
+[   49.393700] [CPU1] [103] [a7] sched_dumpstack: backtrace|85: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393700] [CPU1] [103] [a7] sched_dumpstack: backtrace|85: 0x38015fe8
+[   49.393800] [CPU1] [103] [a7] sched_dumpstack: backtrace|87: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393800] [CPU1] [103] [a7] sched_dumpstack: backtrace|87: 0x38015fe8
+[   49.393900] [CPU1] [103] [a7] sched_dumpstack: backtrace|89: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393900] [CPU1] [103] [a7] sched_dumpstack: backtrace|89: 0x38015fe8
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|90: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x3442f77a 0x34429cf6 0x34327cb2
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|90: 0x3801c012
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|91: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x3442faac 0x34327756 0x38015fe8
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|96: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x3442faac 0x34327756 0x38015fe8
+[   49.394100] [CPU1] [103] [a7] sched_dumpstack: backtrace|97: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432e3fa 0x343892c0 0x34327cb2 0x3801c012
+[   49.394200] [CPU1] [103] [a7] sched_dumpstack: backtrace|98: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.394200] [CPU1] [103] [a7] sched_dumpstack: backtrace|98: 0x34387434 0x343d2426 0x34327756 0x38015fe8
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|99: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343adb44 0x343afc1a 0x343d2426
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|99: 0x34327756 0x38015fe8
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|100: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343af252 0x343d2426 0x34327756
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|100: 0x38015fe8
+[   49.394400] [CPU1] [103] [a7] sched_dumpstack: backtrace|101: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343d2d42 0x34327756 0x38015fe8
+[   49.394500] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x38010da2 0x38018d84 0x34327c08 0x38014728 0x38017b26 0x38014c2e 0x34324370 0x380164f2
+[   49.394500] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x3432786c 0x343d27f2 0x343bd9d0 0x343bdf4a 0x343c9f6e 0x343d2d7a 0x34327756 0x38015fe8
+[   49.394600] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|105: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343d2d42 0x34327756 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|106: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343bcc9c 0x343d2426 0x34327756
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|106: 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|107: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343bc0cc 0x343d2426 0x34327756
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|107: 0x38015fe8
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|110: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d28fa 0x343bfdf4 0x343d2426 0x34327756
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|110: 0x38015fe8
+[   49.394900] [CPU1] [103] [a7] sched_dumpstack: backtrace|111: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|111: 0x343c1c3e 0x343d2426 0x34327756 0x38015fe8
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|115: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|115: 0x343bf3b6 0x343d2426 0x34327756 0x38015fe8
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|116: 0x380193fc 0x3802c766 0x3451f5cc 0x343b328e 0x343d2426 0x34327756 0x38015fe8
+[   49.395100] [CPU1] [103] [a7] sched_dumpstack: backtrace|118: 0x380193fc 0x3802c766 0x3451f5cc 0x343b2274 0x343d2426 0x34327756 0x38015fe8
+[   49.395200] [CPU1] [103] [a7] sched_dumpstack: backtrace|120: 0x380193fc 0x3802c766 0x3801944a 0x380162e8 0x343d2580 0x343c8e3e 0x343c8ee4 0x343c4408
+[   49.395200] [CPU1] [103] [a7] sched_dumpstack: backtrace|120: 0x343d2426 0x34327756 0x38015fe8
+[   49.395300] [CPU1] [103] [a7] sched_dumpstack: backtrace|124: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395300] [CPU1] [103] [a7] sched_dumpstack: backtrace|124: 0x343c4894 0x343d2426 0x34327756 0x38015fe8
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|125: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d28aa 0x343c4be6 0x343d2426 0x34327756
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|125: 0x38015fe8
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|127: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343af5b8
+[   49.395500] [CPU1] [103] [a7] sched_dumpstack: backtrace|127: 0x3442a87c 0x3442acd0 0x34423e52 0x343d2426 0x34327756 0x38015fe8
+[   49.395700] [CPU1] [103] [a7] Version: NuttX A7 12.6.0 54f1cb0d0f Mar 25 2026 19:59:15 arm
+[   49.395700] [CPU1] [103] [a7] Time: Thu Mar 26 03:31:40 2026
+
+[   49.395800] [CPU1] [103] [a7] Remote: ap headrx 40698
+[   49.395900] [CPU1] [103] [a7] Dump rpmsg info between cpu (master: no)audio <==> ap:
+[   49.395900] [CPU1] [103] [a7] rpmsg vq RX:
+[   49.395900] [CPU1] [103] [a7] VQ: rx_vq - size=16; free=16; queued=0; desc_head_idx=0; available_idx=40698; avail.idx=40699; used_cons_idx=0; used.idx=40698; avail.flags=0x0; used.flags=0x0
+[   49.395900] [CPU1] [103] [a7] rpmsg vq TX:
+[   49.396000] [CPU1] [103] [a7] VQ: tx_vq - size=16; free=16; queued=0; desc_head_idx=0; available_idx=40188; avail.idx=40204; used_cons_idx=0; used.idx=40188; avail.flags=0x0; used.flags=0x0
+[   49.396000] [CPU1] [103] [a7]   rpmsg ept list:
+[   49.396000] [CPU1] [103] [a7]     ept NS
+[   49.396000] [CPU1] [103] [a7]     ept rpmsg-rtc
+[   49.396000] [CPU1] [103] [a7]     ept rpmsg-usrsock
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-syslog
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-ttyAUDIO
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-sensor
+[   49.396100] [CPU1] [103] [a7]     ept pcm0p
+[   49.396100] [CPU1] [103] [a7]     ept pcm0c
+[   49.396100] [CPU1] [103] [a7]     ept pcm1p
+[   49.396100] [CPU1] [103] [a7]     ept pcm1c
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38106180
+[   49.396100] [CPU1] [103] [a7]     ept audio
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38107c60
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38107f50
+[   49.396100] [CPU1] [103] [a7]     ept s:enf071f2e5:1
+[   49.396100] [CPU1] [103] [a7]     ept s:bu5ed1364c:2
+[   49.396200] [CPU1] [103] [a7]     ept s:bu5ed1364c:3
+[   49.396200] [CPU1] [103] [a7]     ept s:bu5ed1364c:4
+[   49.396200] [CPU1] [103] [a7]   rpmsg buffer list:
+[   49.396200] [CPU1] [103] [a7]     RX buffer, total 16, pending 1
+[   49.396200] [CPU1] [103] [a7]       RX buffer 0x387ab050 hold by pcm0c
+[   49.396300] [CPU1] [103] [a7]     TX buffer, total 16, pending 0
+
+[   50.794907] [ 8] [ EMERG] [ap] Remote: audio headrx 40188
+[   50.794985] [ 8] [ EMERG] [ap] Dump rpmsg info between cpu (master: yes)ap <==> audio:
+[   50.794985] [ 8] [ EMERG] [ap] rpmsg vq RX:
+[   50.794985] [ 8] [ EMERG] [ap] VQ: rx_vq - size=16; free=0; queued=0; desc_head_idx=32768; available_idx=0; avail.idx=40204; used_cons_idx=40188; used.idx=40188; avail.flags=0x0; used.flags=0x0
+[   50.795062] [ 8] [ EMERG] [ap] rpmsg vq TX:
+[   50.795140] [ 8] [ EMERG] [ap] VQ: tx_vq - size=16; free=11; queued=0; desc_head_idx=5; available_idx=0; avail.idx=40699; used_cons_idx=40694; used.idx=40698; avail.flags=0x0; used.flags=0x0
+[   50.800574] [ 8] [ EMERG] [ap]   rpmsg ept list:
+[   50.800652] [ 8] [ EMERG] [ap]     ept NS
+[   50.800652] [ 8] [ EMERG] [ap]     ept rpmsg-ttyAUDIO
+[   50.800652] [ 8] [ EMERG] [ap]     ept rpmsg-sensor
+[   50.800729] [ 8] [ EMERG] [ap]     ept rpmsg-rtc
+[   50.800729] [ 8] [ EMERG] [ap]     ept rpmsg-usrsock
+[   50.800729] [ 8] [ EMERG] [ap]     ept rpmsg-syslog
+[   50.800729] [ 8] [ EMERG] [ap]     ept pcm0p
+[   50.806241] [ 8] [ EMERG] [ap]     ept pcm0c
+[   50.806241] [ 8] [ EMERG] [ap]     ept pcm1p
+[   50.806241] [ 8] [ EMERG] [ap]     ept pcm1c
+[   50.806318] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38106180
+[   50.806318] [ 8] [ EMERG] [ap]     ept audio
+[   50.806318] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38107c60
+[   50.806318] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38107f50
+[   50.806396] [ 8] [ EMERG] [ap]     ept s:enf071f2e5:1
+[   50.806396] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:2
+[   50.811597] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:3
+[   50.811675] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:4
+[   50.811675] [ 8] [ EMERG] [ap]   rpmsg buffer list:
+[   50.811675] [ 8] [ EMERG] [ap]     RX buffer, total 16, pending 0
+[   50.811752] [ 8] [ EMERG] [ap]     TX buffer, total 16, pending 1
+[   50.811752] [ 8] [ EMERG] [ap]       TX buffer 0x387ab050 hold by pcm0c
+[   50.811830] [ 8] [ ERROR] [ap] osSemaphoreNewInner: osSemaphoreNewInner failed, in_isr:1, os_ready:1
+[   50.817342] [ 8] [ EMERG] [ap] reset mode:2
+[   50.817342] [ 8] [ EMERG] [ap] Dump board_reset backtrace:
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_hardfault: Hard Fault escalation:
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault: PANIC!!! Usage Fault:
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault:      IRQ: 3 regs: 0x2000a9d4
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault:      BASEPRI: 00000080 PRIMASK: 00000000 IPSR: 00000003 CONTROL: 0000000c
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault:      CFSR: 00100000 HFSR: 40000000 DFSR: 00000000 BFAR: e000ed38 AFSR: 00000000
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault: Usage Fault Reason:
+[18446744073709.551615] [ 8] [ ALERT] [ap] arm_usagefault:      Stack Overflow
+[18446744073709.551615] [ 8] [ EMERG] [ap] reset mode:2
+[18446744073709.551615] [ 8] [ EMERG] [ap] Dump board_reset backtrace:
+[18446744073709.551615] [ 8] [ ALERT] [ap] sched_dumpstack: backtrace| 8: 0x0c2c0352 0x0c28f9de 0xdeadbeec 0xdeadbeec
+[18446744073709.551615] [ 8] [ EMERG] [ap] Version: NuttX DreamePad003 12.6.0 54f1cb0d0f Mar 26 2026 11:14:09 arm
+[18446744073709.551615] [ 8] [ EMERG] [ap] Time: Wed Apr 12 11:32:40 58658
+[18446744073709.551615] [ 8] [ ALERT] [ap] board_reset: ap force panic audio ...
+[18446744073709.551615] [ 8] [  INFO] [ap] ched_dumpstack: backtrace|57: 0x34327756 0x38015fe8
+[   49.393400] [CPU1] [103] [a7] sched_dumpstack: backtrace|58: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343af252 0x343d2426 0x34327756
+[   49.393400] [CPU1] [103] [a7] sched_dumpstack: backtrace|58: 0x38015fe8
+[   49.393500] [CPU1] [103] [a7] sched_dumpstack: backtrace|59: 0x38015bcc 0x3802c766 0x38015938 0x380159ce 0x38015a18 0x38015a56 0x343fad96 0x34327756
+[   49.393500] [CPU1] [103] [a7] sched_dumpstack: backtrace|59: 0x38015fe8
+[   49.393600] [CPU
+[18446744073709.551615] [ 8] [  INFO] [ap] 1] [103] [a7] sched_dumpstack: backtrace|83: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343fb3ae 0x343f94fa 0x343d3d2e 0x343d3dd6
+[   49.393600] [CPU1] [103] [a7] sched_dumpstack: backtrace|83: 0x343d2426 0x34327756 0x38015fe8
+[   49.393600] [CPU1] [103] [a7] sched_dumpstack: backtrace|84: 0x380193fc 0x3802c766 0x34328132 0x343d3652 0x343d2426 0x34327756 0x38015fe8
+[   49.393700] [CPU1] [103] [a7] sched_dumpstack: backtrace|85: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393700] [CPU1] [103] [a7] sched_dumpstack: backtrace|85: 0x38015fe8
+[   49.393800] [CPU1] [103] [a7] sched_dumpstack: backtrace|87: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393800] [CPU1] [103] [a7] sched_dumpstack: backtrace|87: 0x38015fe8
+[   49.393900] [CPU1] [103] [a7] sched_dumpstack: backtrace|89: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343d692a 0x343d2426 0x34327756
+[   49.393900] [CPU1] [103] [a7] sched_dumpstack: backtrace|89: 0x38015fe8
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|90: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x3442f77a 0x34429cf6 0x34327cb2
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|90: 0x3801c012
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|91: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x3442faac 0x34327756 0x38015fe8
+[   49.394000] [CPU1] [103] [a7] sched_dumpstack: backtrace|96: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x3442faac 0x34327756 0x38015fe8
+[   49.394100] [CPU1] [103] [a7] sched_dumpstack: backtrace|97: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432e3fa 0x343892c0 0x34327cb2 0x3801c012
+[   49.394200] [CPU1] [103] [a7] sched_dumpstack: backtrace|98: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.394200] [CPU1] [103] [a7] sched_dumpstack: backtrace|98: 0x34387434 0x343d2426 0x34327756 0x38015fe8
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|99: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343adb44 0x343afc1a 0x343d2426
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|99: 0x34327756 0x38015fe8
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|100: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343af252 0x343d2426 0x34327756
+[   49.394300] [CPU1] [103] [a7] sched_dumpstack: backtrace|100: 0x38015fe8
+[   49.394400] [CPU1] [103] [a7] sched_dumpstack: backtrace|101: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343d2d42 0x34327756 0x38015fe8
+[   49.394500] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x38010da2 0x38018d84 0x34327c08 0x38014728 0x38017b26 0x38014c2e 0x34324370 0x380164f2
+[   49.394500] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x3432786c 0x343d27f2 0x343bd9d0 0x343bdf4a 0x343c9f6e 0x343d2d7a 0x34327756 0x38015fe8
+[   49.394600] [CPU1] [103] [a7] sched_dumpstack: backtrace|103: 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|105: 0x380193fc 0x3802c766 0x3801944a 0x380165d4 0x343d2d42 0x34327756 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|106: 0x380193fc 0x3802c766 0x34328132 0x343d2706 0x343d152c 0x343bcc9c 0x343d2426 0x34327756
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|106: 0x38015fe8
+[   49.394700] [CPU1] [103] [a7] sched_dumpstack: backtrace|107: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d293e 0x343bc0cc 0x343d2426 0x34327756
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|107: 0x38015fe8
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|110: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d28fa 0x343bfdf4 0x343d2426 0x34327756
+[   49.394800] [CPU1] [103] [a7] sched_dumpstack: backtrace|110: 0x38015fe8
+[   49.394900] [CPU1] [103] [a7] sched_dumpstack: backtrace|111: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|111: 0x343c1c3e 0x343d2426 0x34327756 0x38015fe8
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|115: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|115: 0x343bf3b6 0x343d2426 0x34327756 0x38015fe8
+[   49.395000] [CPU1] [103] [a7] sched_dumpstack: backtrace|116: 0x380193fc 0x3802c766 0x3451f5cc 0x343b328e 0x343d2426 0x34327756 0x38015fe8
+[   49.395100] [CPU1] [103] [a7] sched_dumpstack: backtrace|118: 0x380193fc 0x3802c766 0x3451f5cc 0x343b2274 0x343d2426 0x34327756 0x38015fe8
+[   49.395200] [CPU1] [103] [a7] sched_dumpstack: backtrace|120: 0x380193fc 0x3802c766 0x3801944a 0x380162e8 0x343d2580 0x343c8e3e 0x343c8ee4 0x343c4408
+[   49.395200] [CPU1] [103] [a7] sched_dumpstack: backtrace|120: 0x343d2426 0x34327756 0x38015fe8
+[   49.395300] [CPU1] [103] [a7] sched_dumpstack: backtrace|124: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343d152c
+[   49.395300] [CPU1] [103] [a7] sched_dumpstack: backtrace|124: 0x343c4894 0x343d2426 0x34327756 0x38015fe8
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|125: 0x3801a6d4 0x3802c766 0x3801b5f2 0x3432b722 0x343d28aa 0x343c4be6 0x343d2426 0x34327756
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|125: 0x38015fe8
+[   49.395400] [CPU1] [103] [a7] sched_dumpstack: backtrace|127: 0x380193fc 0x3802c766 0x380196d6 0x3801976a 0x3801671c 0x3432771a 0x343d2768 0x343af5b8
+[   49.395500] [CPU1] [103] [a7] sched_dumpstack: backtrace|127: 0x3442a87c 0x3442acd0 0x34423e52 0x343d2426 0x34327756 0x38015fe8
+[   49.395700] [CPU1] [103] [a7] Version: NuttX A7 12.6.0 54f1cb0d0f Mar 25 2026 19:59:15 arm
+[   49.395700] [CPU1] [103] [a7] Time: Thu Mar 26 03:31:40 2026
+
+[   49.395800] [CPU1] [103] [a7] Remote: ap headrx 40698
+[   49.395900] [CPU1] [103] [a7] Dump rpmsg info between cpu (master: no)audio <==> ap:
+[   49.395900] [CPU1] [103] [a7] rpmsg vq RX:
+[   49.395900] [CPU1] [103] [a7] VQ: rx_vq - size=16; free=16; queued=0; desc_head_idx=0; available_idx=40698; avail.idx=40699; used_cons_idx=0; used.idx=40698; avail.flags=0x0; used.flags=0x0
+[   49.395900] [CPU1] [103] [a7] rpmsg vq TX:
+[   49.396000] [CPU1] [103] [a7] VQ: tx_vq - size=16; free=16; queued=0; desc_head_idx=0; available_idx=40188; avail.idx=40204; used_cons_idx=0; used.idx=40188; avail.flags=0x0; used.flags=0x0
+[   49.396000] [CPU1] [103] [a7]   rpmsg ept list:
+[   49.396000] [CPU1] [103] [a7]     ept NS
+[   49.396000] [CPU1] [103] [a7]     ept rpmsg-rtc
+[   49.396000] [CPU1] [103] [a7]     ept rpmsg-usrsock
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-syslog
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-ttyAUDIO
+[   49.396100] [CPU1] [103] [a7]     ept rpmsg-sensor
+[   49.396100] [CPU1] [103] [a7]     ept pcm0p
+[   49.396100] [CPU1] [103] [a7]     ept pcm0c
+[   49.396100] [CPU1] [103] [a7]     ept pcm1p
+[   49.396100] [CPU1] [103] [a7]     ept pcm1c
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38106180
+[   49.396100] [CPU1] [103] [a7]     ept audio
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38107c60
+[   49.396100] [CPU1] [103] [a7]     ept rpmsgfs-0x38107f50
+[   49.396100] [CPU1] [103] [a7]     ept s:enf071f2e5:1
+[   49.396100] [CPU1] [103] [a7]     ept s:bu5ed1364c:2
+[   49.396200] [CPU1] [103] [a7]     ept s:bu5ed1364c:3
+[   49.396200] [CPU1] [103] [a7]     ept s:bu5ed1364c:4
+[   49.396200] [CPU1] [103] [a7]   rpmsg buffer list:
+[   49.396200] [CPU1] [103] [a7]     RX buffer, total 16, pending 1
+[   49.396200] [CPU1] [103] [a7]       RX buffer 0x387ab050 hold by pcm0c
+[   49.396300] [CPU1] [103] [a7]     TX buffer, total 16, pending 0
+
+[18446744073709.551615] [ 8] [ EMERG] [ap] Remote: audio headrx 40188
+[18446744073709.551615] [ 8] [ EMERG] [ap] Dump rpmsg info between cpu (master: yes)ap <==> audio:
+[18446744073709.551615] [ 8] [ EMERG] [ap] rpmsg vq RX:
+[18446744073709.551615] [ 8] [ EMERG] [ap] VQ: rx_vq - size=16; free=0; queued=0; desc_head_idx=32768; available_idx=0; avail.idx=40204; used_cons_idx=40188; used.idx=40188; avail.flags=0x0; used.flags=0x0
+[18446744073709.551615] [ 8] [ EMERG] [ap] rpmsg vq TX:
+[18446744073709.551615] [ 8] [ EMERG] [ap] VQ: tx_vq - size=16; free=11; queued=0; desc_head_idx=5; available_idx=0; avail.idx=40699; used_cons_idx=40694; used.idx=40698; avail.flags=0x0; used.flags=0x0
+[18446744073709.551615] [ 8] [ EMERG] [ap]   rpmsg ept list:
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept NS
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsg-ttyAUDIO
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsg-sensor
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsg-rtc
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsg-usrsock
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsg-syslog
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept pcm0p
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept pcm0c
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept pcm1p
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept pcm1c
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38106180
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept audio
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38107c60
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept rpmsgfs-0x38107f50
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept s:enf071f2e5:1
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:2
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:3
+[18446744073709.551615] [ 8] [ EMERG] [ap]     ept s:bu5ed1364c:4
+[18446744073709.551615] [ 8] [ EMERG] [ap]   rpmsg buffer list:
+[18446744073709.551615] [ 8] [ EMERG] [ap]     RX buffer, total 16, pending 0
+[18446744073709.551615] [ 8] [ EMERG] [ap]     TX buffer, total 16, pending 1
+[18446744073709.551615] [ 8] [ EMERG] [ap]       TX buffer 0x387ab050 hold by pcm0c
+[18446744073709.551615] [ 8] [ ERROR] [ap] osSemaphoreNewInner: osSemaphoreNewInner failed, in_isr:1, os_ready:1
+[18446744073709.551615] [ 8] [ EMERG] [ap] reset mode:2
+[18446744073709.551615] [ 8] [ EMERG] [ap] Dump board_reset backtrace:
