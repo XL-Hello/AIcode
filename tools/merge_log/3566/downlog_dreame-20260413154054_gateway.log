@@ -1,0 +1,960 @@
+[26-04-11 12:47:30.969][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 12:47:30.969][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 12:47:30.970][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 12:47:30.971][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 12:47:30.971][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 12:47:30.971][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 12:47:30.971][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 12:47:30.971][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 12:47:30.974][gateway I][34mSend gatewayOtaCheck[290936] done. ret:361[0m
+[26-04-11 12:47:30.974][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[290936] done. ret:0[0m
+[26-04-11 12:47:30.974][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[290936], waitTimeMs=22000[0m
+[26-04-11 12:47:30.972][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:290936, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 12:47:30.972][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=290936[0m
+[26-04-11 12:47:30.974][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=290936, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 12:47:31.107][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:290936, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 12:47:31.107][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=290936[0m
+[26-04-11 12:47:31.107][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=290936, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 12:47:31.107][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:290936 done.[0m
+[26-04-11 12:47:31.107][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:290936[0m
+[26-04-11 12:47:31.107][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 12:47:31.107][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 12:47:31.108][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 12:47:31.108][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 12:47:31.108][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 13:09:25.393][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 13:09:25.393][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 13:09:25.394][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:8011567, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 13:09:25.394][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=8011567[0m
+[26-04-11 13:09:25.394][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=8011567, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 13:09:25.393][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 13:09:25.393][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 13:09:25.393][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 13:09:25.393][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 13:09:25.393][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 13:09:25.393][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 13:09:25.394][gateway I][34mSend gatewayOtaCheck[8011567] done. ret:361[0m
+[26-04-11 13:09:25.394][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[8011567] done. ret:0[0m
+[26-04-11 13:09:25.394][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[8011567], waitTimeMs=22000[0m
+[26-04-11 13:09:25.531][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:8011567, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 13:09:25.531][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=8011567[0m
+[26-04-11 13:09:25.531][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=8011567, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 13:09:25.532][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:8011567 done.[0m
+[26-04-11 13:09:25.532][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:8011567[0m
+[26-04-11 13:09:25.532][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 13:09:25.532][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 13:09:25.532][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 13:09:25.532][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 13:09:25.532][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 14:07:43.929][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 14:07:43.929][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 14:07:43.931][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:3787680, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 14:07:43.931][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=3787680[0m
+[26-04-11 14:07:43.931][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=3787680, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 14:07:43.930][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 14:07:43.930][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 14:07:43.930][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 14:07:43.930][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 14:07:43.930][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 14:07:43.930][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 14:07:43.935][gateway I][34mSend gatewayOtaCheck[3787680] done. ret:361[0m
+[26-04-11 14:07:43.935][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[3787680] done. ret:0[0m
+[26-04-11 14:07:43.935][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[3787680], waitTimeMs=22000[0m
+[26-04-11 14:07:44.074][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:3787680, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 14:07:44.074][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=3787680[0m
+[26-04-11 14:07:44.074][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=3787680, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 14:07:44.074][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:3787680 done.[0m
+[26-04-11 14:07:44.074][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:3787680[0m
+[26-04-11 14:07:44.074][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 14:07:44.074][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 14:07:44.075][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 14:07:44.075][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 14:07:44.075][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 15:44:09.209][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 15:44:09.210][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 15:44:09.211][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 15:44:09.211][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 15:44:09.211][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 15:44:09.211][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 15:44:09.211][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 15:44:09.211][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 15:44:09.211][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:10639720, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 15:44:09.211][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=10639720[0m
+[26-04-11 15:44:09.211][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=10639720, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 15:44:09.212][gateway I][34mSend gatewayOtaCheck[10639720] done. ret:361[0m
+[26-04-11 15:44:09.212][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[10639720] done. ret:0[0m
+[26-04-11 15:44:09.212][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[10639720], waitTimeMs=22000[0m
+[26-04-11 15:44:09.350][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:10639720, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 15:44:09.350][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=10639720[0m
+[26-04-11 15:44:09.350][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=10639720, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 15:44:09.350][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:10639720 done.[0m
+[26-04-11 15:44:09.350][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:10639720[0m
+[26-04-11 15:44:09.350][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 15:44:09.350][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 15:44:09.350][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 15:44:09.350][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 15:44:09.350][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 16:30:41.662][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 16:30:41.662][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 16:30:41.664][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:7705701, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 16:30:41.664][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=7705701[0m
+[26-04-11 16:30:41.664][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=7705701, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 16:30:41.662][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 16:30:41.663][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 16:30:41.663][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 16:30:41.663][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 16:30:41.663][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 16:30:41.663][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 16:30:41.664][gateway I][34mSend gatewayOtaCheck[7705701] done. ret:361[0m
+[26-04-11 16:30:41.664][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[7705701] done. ret:0[0m
+[26-04-11 16:30:41.664][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[7705701], waitTimeMs=22000[0m
+[26-04-11 16:30:41.799][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:7705701, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 16:30:41.799][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=7705701[0m
+[26-04-11 16:30:41.799][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=7705701, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 16:30:41.799][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:7705701 done.[0m
+[26-04-11 16:30:41.799][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:7705701[0m
+[26-04-11 16:30:41.800][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 16:30:41.800][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 16:30:41.800][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 16:30:41.800][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 16:30:41.800][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 17:13:16.248][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 17:13:16.248][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 17:13:16.249][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:15567049, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 17:13:16.249][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=15567049[0m
+[26-04-11 17:13:16.249][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=15567049, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 17:13:16.248][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 17:13:16.248][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 17:13:16.248][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 17:13:16.248][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 17:13:16.249][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 17:13:16.249][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 17:13:16.249][gateway I][34mSend gatewayOtaCheck[15567049] done. ret:361[0m
+[26-04-11 17:13:16.249][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[15567049] done. ret:0[0m
+[26-04-11 17:13:16.249][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[15567049], waitTimeMs=22000[0m
+[26-04-11 17:13:16.387][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:15567049, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 17:13:16.387][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=15567049[0m
+[26-04-11 17:13:16.387][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=15567049, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 17:13:16.387][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:15567049 done.[0m
+[26-04-11 17:13:16.387][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:15567049[0m
+[26-04-11 17:13:16.387][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 17:13:16.387][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 17:13:16.387][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 17:13:16.387][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 17:13:16.388][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 18:55:46.212][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 18:55:46.212][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 18:55:46.213][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:6634749, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 18:55:46.213][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=6634749[0m
+[26-04-11 18:55:46.213][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=6634749, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 18:55:46.212][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 18:55:46.212][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 18:55:46.213][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 18:55:46.213][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 18:55:46.213][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 18:55:46.213][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 18:55:46.213][gateway I][34mSend gatewayOtaCheck[6634749] done. ret:361[0m
+[26-04-11 18:55:46.213][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[6634749] done. ret:0[0m
+[26-04-11 18:55:46.213][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[6634749], waitTimeMs=22000[0m
+[26-04-11 18:55:46.356][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:6634749, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 18:55:46.356][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=6634749[0m
+[26-04-11 18:55:46.356][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=6634749, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 18:55:46.356][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:6634749 done.[0m
+[26-04-11 18:55:46.357][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:6634749[0m
+[26-04-11 18:55:46.357][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 18:55:46.357][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 18:55:46.357][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 18:55:46.357][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 18:55:46.357][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 19:52:52.730][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 19:52:52.730][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 19:52:52.731][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:13015697, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 19:52:52.731][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=13015697[0m
+[26-04-11 19:52:52.731][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=13015697, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 19:52:52.731][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 19:52:52.731][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 19:52:52.731][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 19:52:52.731][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 19:52:52.731][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 19:52:52.731][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 19:52:52.731][gateway I][34mSend gatewayOtaCheck[13015697] done. ret:361[0m
+[26-04-11 19:52:52.731][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[13015697] done. ret:0[0m
+[26-04-11 19:52:52.731][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[13015697], waitTimeMs=22000[0m
+[26-04-11 19:52:52.866][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:13015697, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 19:52:52.866][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=13015697[0m
+[26-04-11 19:52:52.866][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=13015697, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 19:52:52.866][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:13015697 done.[0m
+[26-04-11 19:52:52.866][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:13015697[0m
+[26-04-11 19:52:52.866][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 19:52:52.866][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 19:52:52.866][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 19:52:52.867][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 19:52:52.867][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 20:41:47.330][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 20:41:47.331][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 20:41:47.332][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 20:41:47.332][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 20:41:47.332][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 20:41:47.332][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 20:41:47.332][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 20:41:47.332][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 20:41:47.332][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:8543691, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 20:41:47.332][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=8543691[0m
+[26-04-11 20:41:47.332][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=8543691, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 20:41:47.332][gateway I][34mSend gatewayOtaCheck[8543691] done. ret:361[0m
+[26-04-11 20:41:47.332][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[8543691] done. ret:0[0m
+[26-04-11 20:41:47.332][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[8543691], waitTimeMs=22000[0m
+[26-04-11 20:41:47.464][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:8543691, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 20:41:47.464][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=8543691[0m
+[26-04-11 20:41:47.464][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=8543691, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 20:41:47.464][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:8543691 done.[0m
+[26-04-11 20:41:47.464][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:8543691[0m
+[26-04-11 20:41:47.464][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 20:41:47.464][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 20:41:47.465][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 20:41:47.465][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 20:41:47.465][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 21:25:54.869][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 21:25:54.869][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 21:25:54.870][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:1422270, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 21:25:54.870][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=1422270[0m
+[26-04-11 21:25:54.870][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=1422270, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 21:25:54.869][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 21:25:54.869][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 21:25:54.869][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 21:25:54.869][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 21:25:54.869][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 21:25:54.869][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 21:25:54.870][gateway I][34mSend gatewayOtaCheck[1422270] done. ret:361[0m
+[26-04-11 21:25:54.870][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[1422270] done. ret:0[0m
+[26-04-11 21:25:54.870][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[1422270], waitTimeMs=22000[0m
+[26-04-11 21:25:54.996][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:1422270, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 21:25:54.996][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=1422270[0m
+[26-04-11 21:25:54.996][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=1422270, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 21:25:54.996][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:1422270 done.[0m
+[26-04-11 21:25:54.996][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:1422270[0m
+[26-04-11 21:25:54.996][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 21:25:54.996][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 21:25:54.997][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 21:25:54.997][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 21:25:54.997][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 22:12:26.450][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 22:12:26.450][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 22:12:26.451][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:13944280, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 22:12:26.451][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=13944280[0m
+[26-04-11 22:12:26.451][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=13944280, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 22:12:26.450][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 22:12:26.450][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 22:12:26.450][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 22:12:26.451][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 22:12:26.451][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 22:12:26.451][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 22:12:26.451][gateway I][34mSend gatewayOtaCheck[13944280] done. ret:361[0m
+[26-04-11 22:12:26.451][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[13944280] done. ret:0[0m
+[26-04-11 22:12:26.451][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[13944280], waitTimeMs=22000[0m
+[26-04-11 22:12:26.567][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:13944280, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 22:12:26.567][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=13944280[0m
+[26-04-11 22:12:26.567][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=13944280, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 22:12:26.567][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:13944280 done.[0m
+[26-04-11 22:12:26.568][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:13944280[0m
+[26-04-11 22:12:26.568][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 22:12:26.568][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 22:12:26.568][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 22:12:26.568][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 22:12:26.568][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-11 23:13:00.130][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 23:13:00.130][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-11 23:13:00.131][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:10206653, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 23:13:00.131][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=10206653[0m
+[26-04-11 23:13:00.131][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=10206653, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-11 23:13:00.130][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-11 23:13:00.130][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-11 23:13:00.130][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-11 23:13:00.130][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-11 23:13:00.130][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-11 23:13:00.130][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-11 23:13:00.132][gateway I][34mSend gatewayOtaCheck[10206653] done. ret:361[0m
+[26-04-11 23:13:00.133][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[10206653] done. ret:0[0m
+[26-04-11 23:13:00.133][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[10206653], waitTimeMs=22000[0m
+[26-04-11 23:13:00.232][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:10206653, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 23:13:00.232][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=10206653[0m
+[26-04-11 23:13:00.232][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=10206653, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 23:13:00.232][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:10206653 done.[0m
+[26-04-11 23:13:00.232][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:10206653[0m
+[26-04-11 23:13:00.232][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-11 23:13:00.232][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-11 23:13:00.232][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-11 23:13:00.232][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-11 23:13:00.232][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 00:10:15.674][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 00:10:15.674][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 00:10:15.675][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 00:10:15.675][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 00:10:15.675][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 00:10:15.675][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 00:10:15.676][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 00:10:15.676][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 00:10:15.676][gateway I][34mSend gatewayOtaCheck[3389379] done. ret:361[0m
+[26-04-12 00:10:15.676][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[3389379] done. ret:0[0m
+[26-04-12 00:10:15.676][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[3389379], waitTimeMs=22000[0m
+[26-04-12 00:10:15.676][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:3389379, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 00:10:15.676][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=3389379[0m
+[26-04-12 00:10:15.676][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=3389379, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 00:10:15.803][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:3389379, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 00:10:15.803][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=3389379[0m
+[26-04-12 00:10:15.804][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=3389379, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 00:10:15.804][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:3389379 done.[0m
+[26-04-12 00:10:15.804][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:3389379[0m
+[26-04-12 00:10:15.804][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 00:10:15.804][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 00:10:15.804][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 00:10:15.804][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 00:10:15.804][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 01:12:10.355][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 01:12:10.355][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 01:12:10.356][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:10248666, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 01:12:10.356][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=10248666[0m
+[26-04-12 01:12:10.356][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=10248666, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 01:12:10.355][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 01:12:10.355][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 01:12:10.356][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 01:12:10.356][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 01:12:10.356][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 01:12:10.356][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 01:12:10.356][gateway I][34mSend gatewayOtaCheck[10248666] done. ret:361[0m
+[26-04-12 01:12:10.356][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[10248666] done. ret:0[0m
+[26-04-12 01:12:10.356][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[10248666], waitTimeMs=22000[0m
+[26-04-12 01:12:10.506][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:10248666, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 01:12:10.506][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=10248666[0m
+[26-04-12 01:12:10.506][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=10248666, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 01:12:10.506][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:10248666 done.[0m
+[26-04-12 01:12:10.506][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:10248666[0m
+[26-04-12 01:12:10.506][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 01:12:10.506][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 01:12:10.506][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 01:12:10.507][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 01:12:10.507][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 02:53:52.299][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 02:53:52.300][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 02:53:52.301][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 02:53:52.301][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 02:53:52.301][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 02:53:52.301][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 02:53:52.301][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 02:53:52.301][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 02:53:52.302][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:1069021, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 02:53:52.302][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=1069021[0m
+[26-04-12 02:53:52.302][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=1069021, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 02:53:52.302][gateway I][34mSend gatewayOtaCheck[1069021] done. ret:361[0m
+[26-04-12 02:53:52.302][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[1069021] done. ret:0[0m
+[26-04-12 02:53:52.302][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[1069021], waitTimeMs=22000[0m
+[26-04-12 02:53:52.430][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:1069021, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 02:53:52.430][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=1069021[0m
+[26-04-12 02:53:52.430][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=1069021, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 02:53:52.432][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:1069021 done.[0m
+[26-04-12 02:53:52.432][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:1069021[0m
+[26-04-12 02:53:52.432][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 02:53:52.432][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 02:53:52.432][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 02:53:52.432][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 02:53:52.432][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 03:56:58.978][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 03:56:58.978][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 03:56:58.979][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:6989609, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 03:56:58.979][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=6989609[0m
+[26-04-12 03:56:58.979][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=6989609, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 03:56:58.978][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 03:56:58.978][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 03:56:58.978][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 03:56:58.978][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 03:56:58.979][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 03:56:58.979][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 03:56:58.979][gateway I][34mSend gatewayOtaCheck[6989609] done. ret:361[0m
+[26-04-12 03:56:58.979][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[6989609] done. ret:0[0m
+[26-04-12 03:56:58.979][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[6989609], waitTimeMs=22000[0m
+[26-04-12 03:56:59.103][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:6989609, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 03:56:59.103][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=6989609[0m
+[26-04-12 03:56:59.103][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=6989609, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 03:56:59.103][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:6989609 done.[0m
+[26-04-12 03:56:59.103][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:6989609[0m
+[26-04-12 03:56:59.103][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 03:56:59.103][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 03:56:59.104][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 03:56:59.104][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 03:56:59.104][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 04:16:58.260][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 04:16:58.261][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 04:16:58.261][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:4419937, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 04:16:58.261][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=4419937[0m
+[26-04-12 04:16:58.261][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=4419937, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 04:16:58.261][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 04:16:58.261][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 04:16:58.261][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 04:16:58.261][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 04:16:58.261][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 04:16:58.261][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 04:16:58.261][gateway I][34mSend gatewayOtaCheck[4419937] done. ret:361[0m
+[26-04-12 04:16:58.261][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[4419937] done. ret:0[0m
+[26-04-12 04:16:58.261][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[4419937], waitTimeMs=22000[0m
+[26-04-12 04:16:58.402][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:4419937, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 04:16:58.402][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=4419937[0m
+[26-04-12 04:16:58.402][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=4419937, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 04:16:58.402][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:4419937 done.[0m
+[26-04-12 04:16:58.403][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:4419937[0m
+[26-04-12 04:16:58.403][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 04:16:58.403][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 04:16:58.403][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 04:16:58.403][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 04:16:58.403][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 05:28:18.996][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 05:28:18.996][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 05:28:18.996][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:7618289, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 05:28:18.996][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=7618289[0m
+[26-04-12 05:28:18.996][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=7618289, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 05:28:18.996][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 05:28:18.996][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 05:28:18.996][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 05:28:18.996][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 05:28:18.996][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 05:28:18.996][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 05:28:18.996][gateway I][34mSend gatewayOtaCheck[7618289] done. ret:361[0m
+[26-04-12 05:28:18.997][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[7618289] done. ret:0[0m
+[26-04-12 05:28:18.997][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[7618289], waitTimeMs=22000[0m
+[26-04-12 05:28:19.108][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:7618289, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 05:28:19.108][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=7618289[0m
+[26-04-12 05:28:19.108][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=7618289, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 05:28:19.108][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:7618289 done.[0m
+[26-04-12 05:28:19.109][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:7618289[0m
+[26-04-12 05:28:19.109][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 05:28:19.109][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 05:28:19.109][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 05:28:19.109][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 05:28:19.109][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 07:01:01.921][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 07:01:01.921][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 07:01:01.922][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:6550421, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 07:01:01.922][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=6550421[0m
+[26-04-12 07:01:01.922][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=6550421, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 07:01:01.921][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 07:01:01.921][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 07:01:01.921][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 07:01:01.921][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 07:01:01.921][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 07:01:01.921][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 07:01:01.922][gateway I][34mSend gatewayOtaCheck[6550421] done. ret:361[0m
+[26-04-12 07:01:01.922][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[6550421] done. ret:0[0m
+[26-04-12 07:01:01.922][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[6550421], waitTimeMs=22000[0m
+[26-04-12 07:01:02.037][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:6550421, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:01:02.038][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=6550421[0m
+[26-04-12 07:01:02.038][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=6550421, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:01:02.038][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:6550421 done.[0m
+[26-04-12 07:01:02.038][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:6550421[0m
+[26-04-12 07:01:02.038][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:01:02.038][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 07:01:02.038][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 07:01:02.038][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 07:01:02.038][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 07:32:05.295][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 07:32:05.295][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 07:32:05.295][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:1902118, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 07:32:05.295][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=1902118[0m
+[26-04-12 07:32:05.295][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=1902118, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 07:32:05.295][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 07:32:05.295][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 07:32:05.295][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 07:32:05.295][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 07:32:05.295][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 07:32:05.295][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 07:32:05.295][gateway I][34mSend gatewayOtaCheck[1902118] done. ret:361[0m
+[26-04-12 07:32:05.295][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[1902118] done. ret:0[0m
+[26-04-12 07:32:05.295][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[1902118], waitTimeMs=22000[0m
+[26-04-12 07:32:05.437][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:1902118, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:32:05.437][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=1902118[0m
+[26-04-12 07:32:05.437][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=1902118, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:32:05.438][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:1902118 done.[0m
+[26-04-12 07:32:05.438][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:1902118[0m
+[26-04-12 07:32:05.438][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 07:32:05.438][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 07:32:05.438][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 07:32:05.438][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 07:32:05.438][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 08:37:10.974][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 08:37:10.974][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 08:37:10.975][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:9096023, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 08:37:10.975][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=9096023[0m
+[26-04-12 08:37:10.975][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=9096023, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 08:37:10.974][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 08:37:10.975][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 08:37:10.975][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 08:37:10.975][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 08:37:10.975][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 08:37:10.975][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 08:37:10.975][gateway I][34mSend gatewayOtaCheck[9096023] done. ret:361[0m
+[26-04-12 08:37:10.975][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[9096023] done. ret:0[0m
+[26-04-12 08:37:10.975][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[9096023], waitTimeMs=22000[0m
+[26-04-12 08:37:11.106][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:9096023, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 08:37:11.106][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=9096023[0m
+[26-04-12 08:37:11.106][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=9096023, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 08:37:11.106][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:9096023 done.[0m
+[26-04-12 08:37:11.106][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:9096023[0m
+[26-04-12 08:37:11.106][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 08:37:11.106][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 08:37:11.106][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 08:37:11.106][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 08:37:11.106][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 09:08:08.336][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 09:08:08.336][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 09:08:08.336][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 09:08:08.336][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 09:08:08.336][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 09:08:08.336][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 09:08:08.336][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 09:08:08.336][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 09:08:08.337][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:14844474, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 09:08:08.337][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=14844474[0m
+[26-04-12 09:08:08.337][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=14844474, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 09:08:08.337][gateway I][34mSend gatewayOtaCheck[14844474] done. ret:361[0m
+[26-04-12 09:08:08.337][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[14844474] done. ret:0[0m
+[26-04-12 09:08:08.337][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[14844474], waitTimeMs=22000[0m
+[26-04-12 09:08:08.476][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:14844474, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 09:08:08.476][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=14844474[0m
+[26-04-12 09:08:08.476][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=14844474, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 09:08:08.477][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:14844474 done.[0m
+[26-04-12 09:08:08.477][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:14844474[0m
+[26-04-12 09:08:08.477][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 09:08:08.477][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 09:08:08.477][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 09:08:08.477][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 09:08:08.477][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 11:00:25.348][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 11:00:25.349][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 11:00:25.350][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 11:00:25.350][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 11:00:25.350][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 11:00:25.350][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 11:00:25.350][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 11:00:25.350][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 11:00:25.351][gateway I][34mSend gatewayOtaCheck[14026757] done. ret:361[0m
+[26-04-12 11:00:25.351][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[14026757] done. ret:0[0m
+[26-04-12 11:00:25.351][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[14026757], waitTimeMs=22000[0m
+[26-04-12 11:00:25.351][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:14026757, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 11:00:25.351][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=14026757[0m
+[26-04-12 11:00:25.351][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=14026757, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 11:00:25.477][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:14026757, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:00:25.477][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=14026757[0m
+[26-04-12 11:00:25.477][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=14026757, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:00:25.477][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:14026757 done.[0m
+[26-04-12 11:00:25.477][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:14026757[0m
+[26-04-12 11:00:25.477][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:00:25.477][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 11:00:25.478][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 11:00:25.478][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 11:00:25.478][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 11:05:26.537][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 11:05:26.537][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 11:05:26.538][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:2828156, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 11:05:26.538][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=2828156[0m
+[26-04-12 11:05:26.538][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=2828156, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 11:05:26.537][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 11:05:26.537][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 11:05:26.537][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 11:05:26.537][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 11:05:26.537][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 11:05:26.537][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 11:05:26.538][gateway I][34mSend gatewayOtaCheck[2828156] done. ret:361[0m
+[26-04-12 11:05:26.538][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[2828156] done. ret:0[0m
+[26-04-12 11:05:26.538][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[2828156], waitTimeMs=22000[0m
+[26-04-12 11:05:26.663][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:2828156, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:05:26.663][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=2828156[0m
+[26-04-12 11:05:26.663][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=2828156, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:05:26.663][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:2828156 done.[0m
+[26-04-12 11:05:26.663][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:2828156[0m
+[26-04-12 11:05:26.663][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 11:05:26.663][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 11:05:26.663][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 11:05:26.663][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 11:05:26.663][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 12:29:56.375][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 12:29:56.375][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 12:29:56.376][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:11240082, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 12:29:56.376][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=11240082[0m
+[26-04-12 12:29:56.377][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=11240082, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 12:29:56.376][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 12:29:56.376][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 12:29:56.376][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 12:29:56.376][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 12:29:56.376][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 12:29:56.376][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 12:29:56.376][gateway I][34mSend gatewayOtaCheck[11240082] done. ret:361[0m
+[26-04-12 12:29:56.376][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[11240082] done. ret:0[0m
+[26-04-12 12:29:56.376][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[11240082], waitTimeMs=22000[0m
+[26-04-12 12:29:56.502][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:11240082, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 12:29:56.502][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=11240082[0m
+[26-04-12 12:29:56.502][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=11240082, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 12:29:56.503][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:11240082 done.[0m
+[26-04-12 12:29:56.503][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:11240082[0m
+[26-04-12 12:29:56.503][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 12:29:56.503][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 12:29:56.503][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 12:29:56.503][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 12:29:56.503][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 14:01:02.262][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 14:01:02.262][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 14:01:02.263][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:2691365, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 14:01:02.263][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=2691365[0m
+[26-04-12 14:01:02.263][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=2691365, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 14:01:02.262][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 14:01:02.262][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 14:01:02.262][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 14:01:02.262][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 14:01:02.262][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 14:01:02.262][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 14:01:02.263][gateway I][34mSend gatewayOtaCheck[2691365] done. ret:361[0m
+[26-04-12 14:01:02.263][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[2691365] done. ret:0[0m
+[26-04-12 14:01:02.263][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[2691365], waitTimeMs=22000[0m
+[26-04-12 14:01:02.397][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:2691365, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:01:02.398][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=2691365[0m
+[26-04-12 14:01:02.398][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=2691365, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:01:02.398][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:2691365 done.[0m
+[26-04-12 14:01:02.398][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:2691365[0m
+[26-04-12 14:01:02.398][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:01:02.398][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 14:01:02.398][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 14:01:02.398][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 14:01:02.398][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 14:32:38.620][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 14:32:38.620][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 14:32:38.621][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:14727487, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 14:32:38.621][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=14727487[0m
+[26-04-12 14:32:38.621][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=14727487, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 14:32:38.621][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 14:32:38.621][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 14:32:38.621][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 14:32:38.621][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 14:32:38.621][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 14:32:38.621][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 14:32:38.621][gateway I][34mSend gatewayOtaCheck[14727487] done. ret:361[0m
+[26-04-12 14:32:38.621][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[14727487] done. ret:0[0m
+[26-04-12 14:32:38.621][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[14727487], waitTimeMs=22000[0m
+[26-04-12 14:32:38.743][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:14727487, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:32:38.743][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=14727487[0m
+[26-04-12 14:32:38.743][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=14727487, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:32:38.743][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:14727487 done.[0m
+[26-04-12 14:32:38.743][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:14727487[0m
+[26-04-12 14:32:38.743][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 14:32:38.743][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 14:32:38.743][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 14:32:38.743][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 14:32:38.743][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 15:51:56.416][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 15:51:56.416][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 15:51:56.417][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:9284146, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 15:51:56.417][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=9284146[0m
+[26-04-12 15:51:56.417][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=9284146, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 15:51:56.416][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 15:51:56.416][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 15:51:56.416][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 15:51:56.417][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 15:51:56.417][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 15:51:56.417][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 15:51:56.417][gateway I][34mSend gatewayOtaCheck[9284146] done. ret:361[0m
+[26-04-12 15:51:56.417][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[9284146] done. ret:0[0m
+[26-04-12 15:51:56.417][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[9284146], waitTimeMs=22000[0m
+[26-04-12 15:51:56.529][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:9284146, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 15:51:56.529][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=9284146[0m
+[26-04-12 15:51:56.529][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=9284146, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 15:51:56.529][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:9284146 done.[0m
+[26-04-12 15:51:56.530][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:9284146[0m
+[26-04-12 15:51:56.530][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 15:51:56.530][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 15:51:56.531][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 15:51:56.531][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 15:51:56.531][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 16:19:50.742][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 16:19:50.742][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 16:19:50.742][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 16:19:50.743][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 16:19:50.743][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 16:19:50.743][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 16:19:50.743][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 16:19:50.743][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 16:19:50.743][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:8327809, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 16:19:50.743][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=8327809[0m
+[26-04-12 16:19:50.743][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=8327809, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 16:19:50.746][gateway I][34mSend gatewayOtaCheck[8327809] done. ret:361[0m
+[26-04-12 16:19:50.746][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[8327809] done. ret:0[0m
+[26-04-12 16:19:50.746][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[8327809], waitTimeMs=22000[0m
+[26-04-12 16:19:50.871][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:8327809, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 16:19:50.871][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=8327809[0m
+[26-04-12 16:19:50.871][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=8327809, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 16:19:50.871][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:8327809 done.[0m
+[26-04-12 16:19:50.871][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:8327809[0m
+[26-04-12 16:19:50.871][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 16:19:50.871][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 16:19:50.871][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 16:19:50.872][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 16:19:50.872][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 17:29:14.478][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 17:29:14.478][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 17:29:14.478][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:3020188, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 17:29:14.478][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=3020188[0m
+[26-04-12 17:29:14.478][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=3020188, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 17:29:14.478][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 17:29:14.478][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 17:29:14.478][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 17:29:14.478][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 17:29:14.478][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 17:29:14.478][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 17:29:14.478][gateway I][34mSend gatewayOtaCheck[3020188] done. ret:361[0m
+[26-04-12 17:29:14.478][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[3020188] done. ret:0[0m
+[26-04-12 17:29:14.478][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[3020188], waitTimeMs=22000[0m
+[26-04-12 17:29:14.602][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:3020188, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 17:29:14.602][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=3020188[0m
+[26-04-12 17:29:14.602][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=3020188, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 17:29:14.602][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:3020188 done.[0m
+[26-04-12 17:29:14.602][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:3020188[0m
+[26-04-12 17:29:14.602][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 17:29:14.602][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 17:29:14.602][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 17:29:14.602][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 17:29:14.602][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 18:20:28.981][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 18:20:28.981][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 18:20:28.982][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:12539792, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 18:20:28.982][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=12539792[0m
+[26-04-12 18:20:28.982][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=12539792, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 18:20:28.982][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 18:20:28.982][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 18:20:28.982][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 18:20:28.982][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 18:20:28.982][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 18:20:28.982][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 18:20:28.982][gateway I][34mSend gatewayOtaCheck[12539792] done. ret:361[0m
+[26-04-12 18:20:28.982][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[12539792] done. ret:0[0m
+[26-04-12 18:20:28.982][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[12539792], waitTimeMs=22000[0m
+[26-04-12 18:20:29.104][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:12539792, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 18:20:29.105][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=12539792[0m
+[26-04-12 18:20:29.105][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=12539792, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 18:20:29.105][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:12539792 done.[0m
+[26-04-12 18:20:29.105][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:12539792[0m
+[26-04-12 18:20:29.105][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 18:20:29.105][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 18:20:29.105][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 18:20:29.105][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 18:20:29.105][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 20:04:47.962][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 20:04:47.962][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 20:04:47.963][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:7790864, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 20:04:47.963][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=7790864[0m
+[26-04-12 20:04:47.963][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=7790864, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 20:04:47.962][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 20:04:47.962][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 20:04:47.962][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 20:04:47.962][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 20:04:47.962][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 20:04:47.963][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 20:04:47.963][gateway I][34mSend gatewayOtaCheck[7790864] done. ret:361[0m
+[26-04-12 20:04:47.963][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[7790864] done. ret:0[0m
+[26-04-12 20:04:47.963][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[7790864], waitTimeMs=22000[0m
+[26-04-12 20:04:48.070][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:7790864, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:04:48.070][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=7790864[0m
+[26-04-12 20:04:48.070][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=7790864, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:04:48.070][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:7790864 done.[0m
+[26-04-12 20:04:48.071][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:7790864[0m
+[26-04-12 20:04:48.071][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:04:48.071][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 20:04:48.071][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 20:04:48.071][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 20:04:48.071][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 20:23:06.241][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 20:23:06.241][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 20:23:06.242][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:11410385, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 20:23:06.242][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=11410385[0m
+[26-04-12 20:23:06.242][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=11410385, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 20:23:06.241][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 20:23:06.241][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 20:23:06.241][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 20:23:06.241][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 20:23:06.241][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 20:23:06.242][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 20:23:06.242][gateway I][34mSend gatewayOtaCheck[11410385] done. ret:361[0m
+[26-04-12 20:23:06.242][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[11410385] done. ret:0[0m
+[26-04-12 20:23:06.242][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[11410385], waitTimeMs=22000[0m
+[26-04-12 20:23:06.360][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:11410385, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:23:06.361][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=11410385[0m
+[26-04-12 20:23:06.361][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=11410385, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:23:06.361][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:11410385 done.[0m
+[26-04-12 20:23:06.361][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:11410385[0m
+[26-04-12 20:23:06.361][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 20:23:06.361][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 20:23:06.361][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 20:23:06.361][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 20:23:06.361][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 21:35:32.996][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 21:35:32.996][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 21:35:32.997][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:15559156, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 21:35:32.997][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=15559156[0m
+[26-04-12 21:35:32.997][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=15559156, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 21:35:32.996][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 21:35:32.996][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 21:35:32.996][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 21:35:32.996][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 21:35:32.997][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 21:35:32.997][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 21:35:32.997][gateway I][34mSend gatewayOtaCheck[15559156] done. ret:361[0m
+[26-04-12 21:35:32.997][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[15559156] done. ret:0[0m
+[26-04-12 21:35:32.997][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[15559156], waitTimeMs=22000[0m
+[26-04-12 21:35:33.114][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:15559156, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 21:35:33.115][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=15559156[0m
+[26-04-12 21:35:33.115][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=15559156, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 21:35:33.115][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:15559156 done.[0m
+[26-04-12 21:35:33.116][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:15559156[0m
+[26-04-12 21:35:33.116][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 21:35:33.116][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 21:35:33.117][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 21:35:33.117][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 21:35:33.117][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 22:36:26.684][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 22:36:26.684][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 22:36:26.685][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:2512563, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 22:36:26.685][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=2512563[0m
+[26-04-12 22:36:26.685][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=2512563, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 22:36:26.684][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 22:36:26.684][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 22:36:26.684][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 22:36:26.684][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 22:36:26.684][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 22:36:26.684][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 22:36:26.685][gateway I][34mSend gatewayOtaCheck[2512563] done. ret:361[0m
+[26-04-12 22:36:26.685][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[2512563] done. ret:0[0m
+[26-04-12 22:36:26.685][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[2512563], waitTimeMs=22000[0m
+[26-04-12 22:36:26.816][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:2512563, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 22:36:26.816][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=2512563[0m
+[26-04-12 22:36:26.816][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=2512563, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 22:36:26.816][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:2512563 done.[0m
+[26-04-12 22:36:26.816][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:2512563[0m
+[26-04-12 22:36:26.816][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 22:36:26.816][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 22:36:26.816][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 22:36:26.816][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 22:36:26.817][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-12 23:27:02.162][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 23:27:02.162][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-12 23:27:02.163][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:11676149, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 23:27:02.163][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=11676149[0m
+[26-04-12 23:27:02.163][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=11676149, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-12 23:27:02.163][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-12 23:27:02.163][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-12 23:27:02.163][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-12 23:27:02.163][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-12 23:27:02.163][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-12 23:27:02.163][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-12 23:27:02.163][gateway I][34mSend gatewayOtaCheck[11676149] done. ret:361[0m
+[26-04-12 23:27:02.163][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[11676149] done. ret:0[0m
+[26-04-12 23:27:02.163][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[11676149], waitTimeMs=22000[0m
+[26-04-12 23:27:02.291][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:11676149, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 23:27:02.291][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=11676149[0m
+[26-04-12 23:27:02.292][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=11676149, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 23:27:02.292][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:11676149 done.[0m
+[26-04-12 23:27:02.292][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:11676149[0m
+[26-04-12 23:27:02.292][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-12 23:27:02.292][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-12 23:27:02.292][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-12 23:27:02.292][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-12 23:27:02.292][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-13 00:26:53.826][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 00:26:53.827][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 00:26:53.828][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-13 00:26:53.828][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-13 00:26:53.828][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-13 00:26:53.828][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-13 00:26:53.828][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-13 00:26:53.828][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-13 00:26:53.828][gateway I][34mSend gatewayOtaCheck[1028922] done. ret:361[0m
+[26-04-13 00:26:53.828][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[1028922] done. ret:0[0m
+[26-04-13 00:26:53.828][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[1028922], waitTimeMs=22000[0m
+[26-04-13 00:26:53.828][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:1028922, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 00:26:53.828][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=1028922[0m
+[26-04-13 00:26:53.828][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=1028922, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 00:26:53.955][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:1028922, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 00:26:53.955][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=1028922[0m
+[26-04-13 00:26:53.955][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=1028922, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 00:26:53.955][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:1028922 done.[0m
+[26-04-13 00:26:53.955][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:1028922[0m
+[26-04-13 00:26:53.955][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 00:26:53.955][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-13 00:26:53.955][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-13 00:26:53.955][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-13 00:26:53.955][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-13 01:20:15.344][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 01:20:15.344][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 01:20:15.345][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:2405850, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 01:20:15.345][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=2405850[0m
+[26-04-13 01:20:15.345][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=2405850, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 01:20:15.344][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-13 01:20:15.344][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-13 01:20:15.344][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-13 01:20:15.345][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-13 01:20:15.345][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-13 01:20:15.345][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-13 01:20:15.347][gateway I][34mSend gatewayOtaCheck[2405850] done. ret:361[0m
+[26-04-13 01:20:15.348][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[2405850] done. ret:0[0m
+[26-04-13 01:20:15.348][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[2405850], waitTimeMs=22000[0m
+[26-04-13 01:20:15.468][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:2405850, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 01:20:15.468][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=2405850[0m
+[26-04-13 01:20:15.468][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=2405850, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 01:20:15.468][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:2405850 done.[0m
+[26-04-13 01:20:15.468][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:2405850[0m
+[26-04-13 01:20:15.468][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 01:20:15.468][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-13 01:20:15.468][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-13 01:20:15.468][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-13 01:20:15.468][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-13 02:18:32.014][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 02:18:32.014][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 02:18:32.015][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:757279, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 02:18:32.015][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=757279[0m
+[26-04-13 02:18:32.015][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=757279, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 02:18:32.014][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-13 02:18:32.014][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-13 02:18:32.014][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-13 02:18:32.014][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-13 02:18:32.014][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-13 02:18:32.014][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-13 02:18:32.015][gateway I][34mSend gatewayOtaCheck[757279] done. ret:361[0m
+[26-04-13 02:18:32.015][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[757279] done. ret:0[0m
+[26-04-13 02:18:32.015][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[757279], waitTimeMs=22000[0m
+[26-04-13 02:18:32.132][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:757279, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 02:18:32.132][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=757279[0m
+[26-04-13 02:18:32.133][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=757279, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 02:18:32.133][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:757279 done.[0m
+[26-04-13 02:18:32.133][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:757279[0m
+[26-04-13 02:18:32.133][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 02:18:32.133][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-13 02:18:32.133][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-13 02:18:32.133][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-13 02:18:32.133][gateway I][34mSend RESPONSE[0] done. ret:363[0m
+[26-04-13 03:06:00.467][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:0)serial:0, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 03:06:00.467][bus I][34m[APP data]BUS send msg with type(0) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=0, ret=335, [gatewayOtaCheck]:{"code":200,"msg":"gw_ota_start","data":null}[0m
+[26-04-13 03:06:00.467][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota)(type:1)serial:12977477, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 03:06:00.467][bus I][34msync msg[gatewayOtaCheck] to app(0529e94f11c14206s_ota), add to wait reply list, serial=12977477[0m
+[26-04-13 03:06:00.467][bus I][34m[APP data]BUS send msg with type(1) to app(0529e94f11c14206s_gateway to 0529e94f11c14206s_ota) serial=12977477, ret=361, [gatewayOtaCheck]:{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}[0m
+[26-04-13 03:06:00.467][gateway I][34mRecv cmd gatewayOtaCheck[0m
+[26-04-13 03:06:00.467][gateway I][busEvent_ota_check](564)[ota] bus ota_check, cmd->value: {"code":200,"msg":"gw_ota_start","data":null}
+[26-04-13 03:06:00.467][gateway I][busEvent_ota_check](569)[ota] ota_check trigger accepted (code=200 msg=gw_ota_start)
+[26-04-13 03:06:00.467][gateway I][busEvent_ota_check](600)[ota] build queryConditions from deviceTree
+[26-04-13 03:06:00.467][gateway I][busEvent_ota_check](636)[ota] send gatewayOtaCheck, queryConditions:1
+[26-04-13 03:06:00.467][gateway I][dm_busManager_sendSync](1283)send bus SYNC msg, cmd: gatewayOtaCheck, dst: 0529e94f11c14206s_ota, timeout: 22000, msg: <{"queryConditions":[{"pid":"00000A0008","ver":"1.0.0","modelName":""}]}>
+[26-04-13 03:06:00.467][gateway I][34mSend gatewayOtaCheck[12977477] done. ret:361[0m
+[26-04-13 03:06:00.467][gateway I][34mdreServerSendEventSync Send gatewayOtaCheck[12977477] done. ret:0[0m
+[26-04-13 03:06:00.467][gateway I][34mdreServerSendEventSync reply waiting gatewayOtaCheck[12977477], waitTimeMs=22000[0m
+[26-04-13 03:06:00.597][bus I][34m[APP data]BUS recv msg from app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway)(type:2)serial:12977477, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 03:06:00.597][bus I][34mBUS match app(0529e94f11c14206s_ota) sync reply msg[gatewayOtaCheck], send to app(0529e94f11c14206s_gateway), serial=12977477[0m
+[26-04-13 03:06:00.597][bus I][34m[APP data]BUS send msg with type(2) to app(0529e94f11c14206s_ota to 0529e94f11c14206s_gateway) serial=12977477, ret=357, [gatewayOtaCheck]:{"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 03:06:00.597][gateway I][34m[33mserverSyncCmdprocess match server_name:gateway command_name:gatewayOtaCheck serial:12977477 done.[0m
+[26-04-13 03:06:00.597][gateway I][34mdreServerSendEventSync received reply, server_name:gateway serial:12977477[0m
+[26-04-13 03:06:00.597][gateway I][34mdreServerSendEventSync received value={"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}[0m
+[26-04-13 03:06:00.597][gateway I][busEvent_ota_check](641)[ota] gatewayOtaCheck rsp: {"code":10201,"msg":"未找到版本信息","data":null,"reqId":""}
+[26-04-13 03:06:00.598][gateway I][busEvent_ota_check](671)[ota] gatewayOtaCheck fail, code:10201
+[26-04-13 03:06:00.598][gateway I][34mrun gateway's cmd gatewayOtaCheck handle func(0x56bcaff050) serial=0, ret=0[0m
+[26-04-13 03:06:00.598][gateway I][34mSend RESPONSE[0] done. ret:363[0m
